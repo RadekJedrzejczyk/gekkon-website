@@ -1,10 +1,10 @@
 <script setup lang="ts">
+import NavBar from '@/components/NavBar.vue';
 </script>
 
 <template>
   <header>
-    <router-link :to="{ name: 'Home' }">Home</router-link>
-    <router-link :to="{ name: 'About' }">About</router-link>
+    <NavBar />
   </header>
   <main>
     <section id="content">

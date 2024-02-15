@@ -5,3 +5,7 @@ export interface GridItem {
   description: Component,
   object: Component,
 }
+
+export interface LinkItem {
+  name: string
+}
