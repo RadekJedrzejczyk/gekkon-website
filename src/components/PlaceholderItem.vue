@@ -2,5 +2,5 @@
 </script>
 
 <template>
-  <div class="text-2xl mt-48">🚧🚧🚧 Tu powstanie strona Górnośląskiej Konferencji Kosmicznej GeKKon! 🚧🚧🚧</div>
+  <div class="text-2xl">🚧🚧🚧 Tu powstanie strona Górnośląskiej Konferencji Kosmicznej GeKKon! 🚧🚧🚧</div>
 </template>
