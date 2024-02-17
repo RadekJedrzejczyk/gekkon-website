@@ -6,5 +6,6 @@ export interface GridItem {
 }
 
 export interface LinkItem {
-  name: string
+  name: string,
+  title: string
 }
