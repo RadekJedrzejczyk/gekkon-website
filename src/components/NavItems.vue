@@ -5,7 +5,7 @@ import { inject } from 'vue'
 const navItems: Array<LinkItem> = [
   { name: 'schedule', title: 'Harmonogram' },
   { name: 'regulations', title: 'Regulamin' },
-  { name: 'contact', title: 'Contact' }
+  { name: 'contact', title: 'Kontakt' }
 ]
 
 const isOpened = inject('isOpened')
