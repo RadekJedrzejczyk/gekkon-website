@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { provide, ref } from 'vue'
 import NavItems from '@/components/NavItems.vue'
+import BarsIcon from './icons/BarsIcon.vue'
 
 const isOpened = ref(false)
 provide('isOpened', isOpened)
@@ -14,8 +15,9 @@ provide('isOpened', isOpened)
       <NavItems />
     </div>
     <div class="md:hidden">
-      <!-- icon button with hamburger -->
-      <button @click="isOpened = !isOpened">menu</button>
+      <button @click="isOpened = !isOpened">
+        <BarsIcon />
+      </button>
       <!-- Mobile menu -->
       <div v-if="isOpened" class="grid gap-4 grid-cols-1 my-4">
         <NavItems />
