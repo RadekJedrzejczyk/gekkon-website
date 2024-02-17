@@ -8,7 +8,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="grid grid-cols-1 gap-16 justify-items-center">
+  <div class="grid grid-cols-1 gap-32 justify-items-center">
     <GridRow
       v-for="item in items"
       :key="items.indexOf(item)"

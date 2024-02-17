@@ -2,7 +2,7 @@
 import { type LinkItem } from '@/interfaces'
 import { inject } from 'vue'
 
-const navItems: Array<LinkItem> = [{ name: 'main' }, { name: 'about' }]
+const navItems: Array<LinkItem> = [{ name: 'main' }]
 
 const toTitle = (name: String) =>
   (name.charAt(0).toUpperCase() + name.slice(1)).trim().replace('/[-_]/gm', ' ')
