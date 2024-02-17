@@ -8,8 +8,12 @@ defineProps<{
 </script>
 
 <template>
-  <div class="grid grid-cols-1 gap-4">
-    <GridRow v-for="item in items" :key="item.id" :reversed="item.id % 2 == 0">
+  <div class="grid grid-cols-1 gap-16 justify-items-center">
+    <GridRow
+      v-for="item in items"
+      :key="items.indexOf(item)"
+      :reversed="items.indexOf(item) % 2 != 0"
+    >
       <template v-slot:description>
         <component :is="item.description" />
       </template>
