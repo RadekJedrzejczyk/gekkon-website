@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import NavBar from '@/components/NavBar.vue';
+import FooterPanel from './components/FooterPanel.vue';
 </script>
 
 <template>
@@ -12,5 +13,7 @@ import NavBar from '@/components/NavBar.vue';
     </section>
     <section id="sponsors"></section>
   </main>
-  <footer></footer>
+  <footer>
+    <FooterPanel />
+  </footer>
 </template>
