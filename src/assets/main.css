@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 #app {
-  padding: 2rem;
   font-weight: normal;
   min-height: 100vh;
+  @apply bg-marshland-900 text-marshland-50;
 }

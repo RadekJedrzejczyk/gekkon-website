@@ -17,6 +17,7 @@ const isOpened = inject('isOpened')
     :key="item.name"
     :to="{ name: item.name }"
     @click="isOpened = !isOpened"
+    class="ml-4"
   >
     {{ item.title }}
   </router-link>

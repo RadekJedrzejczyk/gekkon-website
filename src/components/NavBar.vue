@@ -8,18 +8,23 @@ provide('isOpened', isOpened)
 </script>
 
 <template>
-  <nav>
-    <!-- Logo component -->
-    <!-- Desktop menu -->
-    <div class="hidden md:flex">
-      <NavItems />
-    </div>
-    <div class="md:hidden">
-      <button @click="isOpened = !isOpened">
-        <BarsIcon />
-      </button>
+  <nav class="bg-marshland-100 text-marshland-900">
+    <div class="mb-8 w-5/6 mx-auto py-4">
+      <div class="flex justify-between">
+        <!-- Logo component -->
+        <router-link to="/" @click="isOpened = !isOpened"> GeKKoN </router-link>
+        <!-- Desktop menu -->
+        <div class="hidden text-xl md:flex">
+          <NavItems />
+        </div>
+        <div class="inline md:hidden">
+          <button @click="isOpened = !isOpened">
+            <BarsIcon />
+          </button>
+        </div>
+      </div>
       <!-- Mobile menu -->
-      <div v-if="isOpened" class="grid gap-4 grid-cols-1 my-4">
+      <div v-if="isOpened" class="grid gap-4 grid-cols-1 my-4 justify-items-end text-lg md:hidden">
         <NavItems />
       </div>
     </div>

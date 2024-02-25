@@ -8,6 +8,6 @@ defineProps<{
 
 <template>
   <CellComponent>
-    <p class="font-medium text-4xl md:text-5xl">{{ text }}</p>
+    <p class="font-medium text-4xl md:text-5xl md:text-center">{{ text }}</p>
   </CellComponent>
 </template>

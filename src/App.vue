@@ -3,7 +3,7 @@ import NavBar from '@/components/NavBar.vue';
 </script>
 
 <template>
-  <header>
+  <header class="sticky top-0">
     <NavBar />
   </header>
   <main>
