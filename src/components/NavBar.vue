@@ -9,13 +9,13 @@ provide('isOpened', isOpened)
 
 <template>
   <nav class="bg-marshland-100 text-marshland-900">
-    <div class="mb-8 w-5/6 mx-auto py-4">
+    <div class="mb-16 w-2/3 mx-auto py-4">
       <div class="flex justify-between">
         <!-- Logo component -->
-        <router-link to="/" @click="isOpened = !isOpened"> GeKKoN </router-link>
+        <router-link to="/" @click="isOpened = false"> GeKKoN </router-link>
         <!-- Desktop menu -->
         <div class="hidden text-xl md:flex">
-          <NavItems />
+          <NavItems classes="ml-4"/>
         </div>
         <div class="inline md:hidden">
           <button @click="isOpened = !isOpened">
@@ -25,7 +25,7 @@ provide('isOpened', isOpened)
       </div>
       <!-- Mobile menu -->
       <div v-if="isOpened" class="grid gap-4 grid-cols-1 my-4 justify-items-end text-lg md:hidden">
-        <NavItems />
+        <NavItems/>
       </div>
     </div>
   </nav>

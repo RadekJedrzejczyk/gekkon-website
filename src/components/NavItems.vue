@@ -9,6 +9,8 @@ const navItems: Array<LinkItem> = [
 ]
 
 const isOpened = inject('isOpened')
+
+defineProps<{ classes?: string }>()
 </script>
 
 <template>
@@ -17,7 +19,7 @@ const isOpened = inject('isOpened')
     :key="item.name"
     :to="{ name: item.name }"
     @click="isOpened = !isOpened"
-    class="ml-4"
+    :class="classes"
   >
     {{ item.title }}
   </router-link>
