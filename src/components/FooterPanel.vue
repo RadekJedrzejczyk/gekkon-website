@@ -3,7 +3,7 @@ import NavItems from '@/components/NavItems.vue'
 </script>
 
 <template>
-  <div class="mt-16 pt-8 w-2/3 mx-auto">
+  <div class="pt-16 w-2/3 mx-auto">
     <div class="grid pb-16 md:grid-cols-3 md:justify-items-center">
       <div class="pb-8 md:pb-0">
         <p class="font-bold text-lg pb-4">Europejskie Forum Studentów AEGEE-Gliwice</p>
