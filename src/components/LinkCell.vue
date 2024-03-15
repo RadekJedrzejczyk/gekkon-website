@@ -6,7 +6,8 @@ defineProps<{
   isRouter: boolean
 }>()
 
-const linkClass = 'bg-marshland-100 text-marshland-950 p-2 text-center w-4/5 border-solid rounded-lg font-bold'
+const linkClass =
+  'bg-marshland-100 text-marshland-950 p-2 text-center w-4/5 border-solid rounded-lg font-bold'
 </script>
 
 <template>

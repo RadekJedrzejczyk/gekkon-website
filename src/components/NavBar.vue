@@ -16,8 +16,8 @@ provide('isOpened', isOpened)
         <router-link to="/" @click="isOpened = false"> GeKKoN </router-link>
         <!-- Desktop menu -->
         <div class="hidden text-xl lg:flex lg:items-center">
-          <SpeakerLink :cell="false"/>
-          <NavItems classes="ml-4"/>
+          <SpeakerLink :cell="false" />
+          <NavItems classes="ml-4" />
         </div>
         <!-- Burger button -->
         <div class="inline lg:hidden">
@@ -27,9 +27,12 @@ provide('isOpened', isOpened)
         </div>
       </div>
       <!-- Mobile menu -->
-      <div v-if="isOpened" class="grid gap-4 grid-cols-1 my-4 justify-items-end text-lg pt-8 lg:hidden">
-        <SpeakerLink :cell="false"/>
-        <NavItems/>
+      <div
+        v-if="isOpened"
+        class="grid gap-4 grid-cols-1 my-4 justify-items-end text-lg pt-8 lg:hidden"
+      >
+        <SpeakerLink :cell="false" />
+        <NavItems />
       </div>
     </div>
   </nav>

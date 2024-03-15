@@ -7,7 +7,7 @@ import FooterPanel from './components/FooterPanel.vue';
   <header class="sticky top-0">
     <NavBar />
   </header>
-  <main class="min-h-[100vh] w-2/3 mx-auto">
+  <main class="min-h-[50vh] w-2/3 mx-auto">
     <section id="content">
       <router-view />
     </section>
