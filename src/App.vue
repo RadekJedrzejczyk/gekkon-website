@@ -13,7 +13,7 @@ import FooterPanel from './components/FooterPanel.vue';
     </section>
     <section id="sponsors"></section>
   </main>
-  <footer>
+  <footer class="bg-marshland-800">
     <FooterPanel />
   </footer>
 </template>
