@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+// eslint-disable-next-line no-undef
+const colors = require('tailwindcss/colors')
+
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   theme: {
@@ -18,7 +21,8 @@ export default {
         800: '#363938',
         900: '#2f3231',
         950: '#171918'
-      }
+      },
+      pink: colors.pink
     }
   },
   plugins: []

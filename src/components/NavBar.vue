@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { provide, ref } from 'vue'
 import NavItems from '@/components/NavItems.vue'
-import BarsIcon from './icons/BarsIcon.vue'
+import BarsIcon from '@/components/icons/BarsIcon.vue'
+import SpeakerLink from '@/components/cells/SpeakerLink.vue'
 
 const isOpened = ref(false)
 provide('isOpened', isOpened)
@@ -14,17 +15,20 @@ provide('isOpened', isOpened)
         <!-- Logo component -->
         <router-link to="/" @click="isOpened = false"> GeKKoN </router-link>
         <!-- Desktop menu -->
-        <div class="hidden text-xl md:flex">
+        <div class="hidden text-xl lg:flex lg:items-center">
+          <SpeakerLink :cell="false"/>
           <NavItems classes="ml-4"/>
         </div>
-        <div class="inline md:hidden">
+        <!-- Burger button -->
+        <div class="inline lg:hidden">
           <button @click="isOpened = !isOpened">
             <BarsIcon />
           </button>
         </div>
       </div>
       <!-- Mobile menu -->
-      <div v-if="isOpened" class="grid gap-4 grid-cols-1 my-4 justify-items-end text-lg md:hidden">
+      <div v-if="isOpened" class="grid gap-4 grid-cols-1 my-4 justify-items-end text-lg pt-8 lg:hidden">
+        <SpeakerLink :cell="false"/>
         <NavItems/>
       </div>
     </div>
