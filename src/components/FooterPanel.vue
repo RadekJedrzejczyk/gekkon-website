@@ -4,8 +4,8 @@ import NavItems from '@/components/NavItems.vue'
 
 <template>
   <div class="mt-16 pt-8 w-2/3 mx-auto">
-    <div class="grid md:grid-cols-3 justify-items-center pb-16">
-      <div>
+    <div class="grid pb-16 md:grid-cols-3 md:justify-items-center">
+      <div class="pb-8 md:pb-0">
         <p class="font-bold text-lg pb-4">Europejskie Forum Studentów AEGEE-Gliwice</p>
         <p class="pb-4">
           Centrum Kultury Studenckiej "Mrowisko" <br>
@@ -14,7 +14,7 @@ import NavItems from '@/components/NavItems.vue'
         </p>
         <p>email: gekkon@aegee-gliwice.com</p>
       </div>
-      <div>
+      <div class="pb-8 md:pb-0">
         <NavItems classes="block"/>
       </div>
       <div>Sociale</div>
