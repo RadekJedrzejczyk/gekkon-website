@@ -1,16 +1,19 @@
 <script setup lang="ts">
 import NavBar from '@/components/NavBar.vue';
+import FooterPanel from './components/FooterPanel.vue';
 </script>
 
 <template>
-  <header>
+  <header class="sticky top-0">
     <NavBar />
   </header>
-  <main>
+  <main class="min-h-[50vh] w-2/3 mx-auto">
     <section id="content">
       <router-view />
     </section>
     <section id="sponsors"></section>
   </main>
-  <footer></footer>
+  <footer class="bg-marshland-800">
+    <FooterPanel />
+  </footer>
 </template>

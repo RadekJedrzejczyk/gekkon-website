@@ -34,7 +34,8 @@ const router = createRouter({
       path: '/:notFound',
       component: () => import('@/views/NotFoundView.vue')
     }
-  ]
+  ],
+  scrollBehavior(_to, _from, _savedPosition) { return { top: 0 }; },
 })
 
 const app = createApp(App)
