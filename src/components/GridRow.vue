@@ -5,7 +5,7 @@ defineProps<{
 </script>
 
 <template>
-  <div class="grid gap-16 md:grid-cols-2">
+  <div class="w-full grid gap-16 md:grid-cols-2">
     <div>
       <slot name="description"></slot>
     </div>
