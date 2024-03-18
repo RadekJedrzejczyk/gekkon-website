@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Robtronika';
+  src: url('src/assets/fonts/robtronika/Robtronika-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'Conthrax';
+  src: url('src/assets/fonts/conthrax/conthrax-sb.otf') format('opentype');
+  font-style: normal;
+  font-size: normal;
+}
+
 #app {
   font-weight: normal;
   min-height: 100vh;

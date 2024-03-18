@@ -15,7 +15,7 @@ defineProps({
 <template>
   <LinkCell v-if="cell" :text="linkText" :link="speakerSubmissionAdress" :is-router="false" />
   <a
-    class="bg-pink-500 text-marshland-100 p-2 text-center border-solid rounded-lg font-bold"
+    class="bg-accent-500 text-marshland-100 p-2 text-center border-solid rounded-lg font-bold hover:bg-accent-600"
     v-else
     :href="speakerSubmissionAdress"
     >{{ linkText }}</a
