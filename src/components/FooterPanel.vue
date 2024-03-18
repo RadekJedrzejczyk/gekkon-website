@@ -18,7 +18,7 @@ const socialIconClass = 'size-8 mr-4'
         <p>email: gekkon@aegee-gliwice.com</p>
       </div>
       <div class="pb-8 md:pb-0">
-        <NavItems classes="block" />
+        <NavItems eachClass="block" />
       </div>
       <div>
         <p class="font-bold text-lg pb-4">Odwiedź nasze sociale</p>
@@ -32,7 +32,7 @@ const socialIconClass = 'size-8 mr-4'
       </div>
     </div>
     <p class="text-center mt-8 pb-8">
-      Created with ♥ by <a href="https://github.com/karo-fox" class="text-marshland-200">Karolina Kozubik</a>, 2024
+      Created with ♥ by <a href="https://github.com/karo-fox" class="text-marshland-200" target="_blank">Karolina Kozubik</a>, 2024
     </p>
   </div>
 </template>
