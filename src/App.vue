@@ -5,9 +5,7 @@ import PartnersPanel from '@/components/PartnersPanel.vue'
 </script>
 
 <template>
-  <header class="sticky top-0">
-    <NavBar />
-  </header>
+  <NavBar />
   <main class="min-h-[50vh] w-2/3 mx-auto pb-32">
     <router-view />
   </main>

@@ -9,11 +9,18 @@ provide('isOpened', isOpened)
 </script>
 
 <template>
-  <nav class="bg-marshland-100 text-marshland-900">
+  <header>
+    <router-link to="/" @click="isOpened = false">
+      <object type="image/svg+xml" data="/src/assets/baner.svg">
+        <img src="@/assets/baner.svg" />
+      </object>
+    </router-link>
+  </header>
+  <nav class="bg-marshland-100 text-marshland-900 sticky top-0">
     <div class="mb-16 w-2/3 mx-auto py-4">
       <div class="flex justify-between">
         <!-- Logo component -->
-        <router-link to="/" @click="isOpened = false"> GeKKoN </router-link>
+        <router-link to="/" @click="isOpened = false">GeKKoN</router-link>
         <!-- Desktop menu -->
         <div class="hidden text-xl lg:flex lg:items-center">
           <SpeakerLink :cell="false" />
