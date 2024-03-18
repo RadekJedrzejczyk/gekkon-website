@@ -23,6 +23,10 @@ export default {
         950: '#171918'
       },
       pink: colors.pink
+    },
+    FontFamily: {
+      'robtronika': ["Robtronika"],
+      'conthrax': ["Conthrax"]
     }
   },
   plugins: []

@@ -3,6 +3,7 @@ import { provide, ref } from 'vue'
 import NavItems from '@/components/NavItems.vue'
 import BarsIcon from '@/components/icons/BarsIcon.vue'
 import SpeakerLink from '@/components/cells/SpeakerLink.vue'
+import LogoComponent from '@/components/LogoComponent.vue'
 
 const isOpened = ref(false)
 provide('isOpened', isOpened)
@@ -20,7 +21,7 @@ provide('isOpened', isOpened)
     <div class="mb-16 w-2/3 mx-auto py-4">
       <div class="flex justify-between">
         <!-- Logo component -->
-        <router-link to="/" @click="isOpened = false">GeKKoN</router-link>
+        <router-link to="/" @click="isOpened = false"><LogoComponent class="h-full"/></router-link>
         <!-- Desktop menu -->
         <div class="hidden text-xl lg:flex lg:items-center">
           <SpeakerLink :cell="false" />
