@@ -2,7 +2,7 @@
 import { provide, ref } from 'vue'
 import NavItems from '@/components/NavItems.vue'
 import BarsIcon from '@/components/icons/BarsIcon.vue'
-import SpeakerLink from '@/components/cells/SpeakerLink.vue'
+// import SpeakerLink from '@/components/cells/SpeakerLink.vue'
 import LogoComponent from '@/components/LogoComponent.vue'
 
 const isOpened = ref(false)
