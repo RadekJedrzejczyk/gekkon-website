@@ -7,7 +7,7 @@ const socialIconClass = 'size-8 mr-4'
 
 <template>
   <div class="pt-16 w-2/3 mx-auto">
-    <div class="grid pb-16 md:grid-cols-3 md:justify-items-center">
+    <div class="grid pb-16 md:grid-cols-3 md:justify-items-stretch">
       <div class="pb-8 md:pb-0">
         <p class="font-bold text-lg pb-4">Europejskie Forum Studentów AEGEE-Gliwice</p>
         <p class="pb-4">
@@ -17,10 +17,10 @@ const socialIconClass = 'size-8 mr-4'
         </p>
         <p>email: gekkon@aegee-gliwice.com</p>
       </div>
-      <div class="pb-8 md:pb-0">
+      <div class="pb-8 md:pb-0 md:justify-self-center">
         <NavItems eachClass="block" />
       </div>
-      <div>
+      <div class="md:justify-self-end">
         <p class="font-bold text-lg pb-4">Odwiedź nasze sociale</p>
         <div class="flex">
           <a
