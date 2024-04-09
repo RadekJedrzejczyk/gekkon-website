@@ -35,8 +35,11 @@ const router = createRouter({
       component: () => import('@/views/NotFoundView.vue')
     }
   ],
-  scrollBehavior(_to, _from, _savedPosition) {
-    return { el: 'nav' }
+  scrollBehavior(to, from, savedPosition) {
+    if (from.name === undefined) {
+      return { top: 0 };
+    }
+    return { el: 'nav' };
   }
 })
 
