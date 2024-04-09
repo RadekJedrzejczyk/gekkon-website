@@ -1,6 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 // eslint-disable-next-line no-undef
-const colors = require('tailwindcss/colors')
 
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
@@ -22,7 +21,9 @@ export default {
         900: '#2f3231',
         950: '#171918'
       },
-      accent: colors.pink,
+      accent: {
+        500: '#1468C5'
+      }
     },
     FontFamily: {
       'robtronika': ["Robtronika"],
