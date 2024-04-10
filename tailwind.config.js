@@ -22,12 +22,22 @@ export default {
         950: '#171918'
       },
       accent: {
-        500: '#1468C5'
+        50: '#f1f7fe',
+        100: '#e3edfb',
+        200: '#c0daf7',
+        300: '#88bcf1',
+        400: '#4899e8',
+        500: '#207cd7',
+        600: '#1468c5',
+        700: '#104d94',
+        800: '#12437a',
+        900: '#143966',
+        950: '#0d2444'
       }
     },
     FontFamily: {
-      'robtronika': ["Robtronika"],
-      'conthrax': ["Conthrax"]
+      robtronika: ['Robtronika'],
+      conthrax: ['Conthrax']
     }
   },
   plugins: []

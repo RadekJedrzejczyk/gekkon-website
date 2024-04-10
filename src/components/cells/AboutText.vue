@@ -5,7 +5,7 @@ import TextCell from '../TextCell.vue'
 <template>
   <TextCell>
     <p>
-      <span class="font-bold underline decoration-accent-500 decoration-4">Górnośląska Kosmiczna Konferencja Naukowa</span> GeKKoN to wydarzenie
+      <span class="font-bold underline decoration-accent-600 decoration-4">Górnośląska Kosmiczna Konferencja Naukowa</span> GeKKoN to wydarzenie
       organizowane przez studentów <span class="font-bold">Politechniki Śląskiej</span>. W tym roku
       już po raz drugi spotkamy się, aby podzielić się odkryciami i badaniami związanymi z
       przestrzenia kosmiczną!
