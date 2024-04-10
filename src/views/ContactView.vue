@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const headerStyle = 'font-medium text-3xl pb-4'
 const textStyle = 'text-xl leading-relaxed pb-8'
-const accentStyle = 'font-bold underline decoration-accent-500 decoration-4'
+const accentStyle = 'font-bold underline decoration-accent-600 decoration-4'
 </script>
 
 <template>
