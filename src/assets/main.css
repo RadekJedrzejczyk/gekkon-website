@@ -2,10 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'Robtronika';
+  src: url('src/assets/fonts/robtronika/Robtronika-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-size: normal;
+}
+
+@font-face {
+  font-family: 'Conthrax';
+  src: url('src/assets/fonts/conthrax/conthrax-sb.otf') format('opentype');
+  font-style: normal;
+  font-size: normal;
+}
+
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   font-weight: normal;
-  min-width: 100vh;
+  min-height: 100vh;
+  @apply bg-marshland-900 text-marshland-50;
 }
