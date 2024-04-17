@@ -5,6 +5,8 @@ import BarsIcon from '@/components/icons/BarsIcon.vue'
 // import SpeakerLink from '@/components/cells/SpeakerLink.vue'
 import LogoComponent from '@/components/LogoComponent.vue'
 
+import banerUrl from "@/assets/baner.svg"
+
 const isOpened = ref(false)
 const navItemClass = "hover:bg-marshland-200 p-2 rounded-lg"
 
@@ -14,7 +16,7 @@ provide('isOpened', isOpened)
 <template>
   <header>
     <router-link to="/" @click="isOpened = false">
-      <object type="image/svg+xml" data="/src/assets/baner.svg">
+      <object type="image/svg+xml" :data="banerUrl">
         <img src="@/assets/baner.svg" />
       </object>
     </router-link>
