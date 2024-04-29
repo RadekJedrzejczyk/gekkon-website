@@ -15,7 +15,7 @@ const socialIconClass = 'size-8 mr-4'
           ul. Pszczyńska 85 <br />
           44-100 Gliwice <br />
         </p>
-        <p>email: gekkon@aegee-gliwice.com</p>
+        <p>email: gekkon@aegee-gliwice.org</p>
       </div>
       <div class="pb-8 md:pb-0 md:justify-self-center">
         <NavItems eachClass="block" />

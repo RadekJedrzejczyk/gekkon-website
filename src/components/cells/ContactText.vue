@@ -6,7 +6,7 @@ import TextCell from '../TextCell.vue'
   <TextCell>
     <p>
       Skontaktuj się z nami!<br />
-      adres email: <span class="font-bold underline decoration-accent-600 decoration-4">gekkon@aegee-gliwice.com</span>
+      adres email: <span class="font-bold underline decoration-accent-600 decoration-4">gekkon@aegee-gliwice.org</span>
     </p>
   </TextCell>
 </template>

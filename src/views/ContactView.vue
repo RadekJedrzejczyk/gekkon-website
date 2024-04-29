@@ -8,7 +8,7 @@ const accentStyle = 'font-bold underline decoration-accent-600 decoration-4'
   <h2 :class="headerStyle">Masz pytania? Napisz do nas!</h2>
   <p :class="textStyle">
     Adres e-mail:
-    <span :class="accentStyle">gekkon@aegee-gliwice.com</span>
+    <span :class="accentStyle">gekkon@aegee-gliwice.org</span>
   </p>
   <h2 :class="headerStyle">Gdzie nas znaleźć?</h2>
   <p :class="textStyle">
