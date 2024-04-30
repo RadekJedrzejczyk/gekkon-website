@@ -18,12 +18,12 @@ const accentStyle = 'font-bold underline decoration-accent-600 decoration-4'
   </p>
   <div class="h-[32vh] md:h-[60vh]">
     <iframe
-      src="https://storage.googleapis.com/maps-solutions-56oeajahns/locator-plus/2sms/locator-plus.html"
-      width="100%"
-      height="100%"
-      style="border: 0"
-      loading="lazy"
-    >
-    </iframe>
+      width="600"
+      height="450"
+      style="edge: 0"
+      load="lazy"
+      allowfullscreen
+      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjZJvQAMxEUcRv6WcVkkl7t0&key=AIzaSyC31ZVjuyXRvGLDAX_alFv8ldiVXlIArow"
+    ></iframe>
   </div>
 </template>
