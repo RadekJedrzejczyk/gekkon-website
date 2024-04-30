@@ -18,8 +18,8 @@ const accentStyle = 'font-bold underline decoration-accent-600 decoration-4'
   </p>
   <div class="h-[32vh] md:h-[60vh]">
     <iframe
-      width="600"
-      height="450"
+      width="100%"
+      height="100%"
       style="edge: 0"
       load="lazy"
       allowfullscreen
