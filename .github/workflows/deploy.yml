@@ -42,6 +42,7 @@ jobs:
         run: |
           touch .env
           echo VITE_MAPS_API_KEY="$MAPS_API_KEY" >> .env
+          cat .env
       - name: Install dependencies
         run: npm install
       - name: Build
