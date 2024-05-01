@@ -4,6 +4,7 @@ const textStyle = 'text-xl leading-relaxed pb-8'
 const accentStyle = 'font-bold underline decoration-accent-600 decoration-4'
 
 const MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
+console.log(MAPS_API_KEY);
 </script>
 
 <template>
