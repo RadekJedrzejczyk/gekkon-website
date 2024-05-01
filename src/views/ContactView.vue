@@ -2,6 +2,8 @@
 const headerStyle = 'font-medium text-3xl pb-4'
 const textStyle = 'text-xl leading-relaxed pb-8'
 const accentStyle = 'font-bold underline decoration-accent-600 decoration-4'
+
+const MAPS_API_KEY: string = import.meta.env.MAPS_API_KEY
 </script>
 
 <template>
@@ -18,12 +20,11 @@ const accentStyle = 'font-bold underline decoration-accent-600 decoration-4'
   </p>
   <div class="h-[32vh] md:h-[60vh]">
     <iframe
-      width="100%"
-      height="100%"
-      style="edge: 0"
+      width="600"
+      height="450"
       load="lazy"
       allowfullscreen
-      src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjZJvQAMxEUcRv6WcVkkl7t0&key=AIzaSyC31ZVjuyXRvGLDAX_alFv8ldiVXlIArow"
+      :src="`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjZJvQAMxEUcRv6WcVkkl7t0&key=${MAPS_API_KEY}`"
     ></iframe>
   </div>
 </template>
