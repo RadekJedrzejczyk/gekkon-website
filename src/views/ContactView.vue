@@ -20,8 +20,8 @@ const MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
   </p>
   <div class="h-[32vh] md:h-[60vh]">
     <iframe
-      width="600"
-      height="450"
+      width="100%"
+      height="100%"
       load="lazy"
       allowfullscreen
       :src="`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjZJvQAMxEUcRv6WcVkkl7t0&key=${MAPS_API_KEY}`"
