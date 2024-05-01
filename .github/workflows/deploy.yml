@@ -36,9 +36,12 @@ jobs:
           node-version: 20
           cache: 'npm'
       - name: create env file
+        shell: bash
+        env:
+          MAPS_API_KEY: ${{ secrets.MAPS_API_KEY }}
         run: |
           touch .env.local
-          echo VITE_MAPS_API_KEY=${{ secrets.MAPS_API_KEY }} >> .env.local
+          echo VITE_MAPS_API_KEY="$MAPS_API_KEY" >> .env.local
       - name: Install dependencies
         run: npm install
       - name: Build
