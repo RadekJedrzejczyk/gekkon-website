@@ -40,9 +40,8 @@ jobs:
         env:
           MAPS_API_KEY: ${{ secrets.MAPS_API_KEY }}
         run: |
-          touch .env.local
-          echo VITE_MAPS_API_KEY="$MAPS_API_KEY" >> .env.local
-          ls -la
+          touch .env
+          echo VITE_MAPS_API_KEY="$MAPS_API_KEY" >> .env
       - name: Install dependencies
         run: npm install
       - name: Build
