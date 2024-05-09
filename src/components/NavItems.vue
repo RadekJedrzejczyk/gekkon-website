@@ -3,6 +3,7 @@ import { type LinkItem } from '@/interfaces'
 import { inject } from 'vue'
 
 const navItems: Array<LinkItem> = [
+  { name: 'submissions', title: 'Zapisy' },
   { name: 'schedule', title: 'Harmonogram' },
   { name: 'regulations', title: 'Regulamin' },
   { name: 'contact', title: 'Kontakt' }

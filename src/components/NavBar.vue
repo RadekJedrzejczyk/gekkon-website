@@ -28,7 +28,6 @@ provide('isOpened', isOpened)
         <router-link to="/" @click="isOpened = false"><LogoComponent /></router-link>
         <!-- Desktop menu -->
         <div class="hidden text-xl lg:flex lg:items-center">
-          <!-- <SpeakerLink :cell="false" /> -->
           <NavItems :eachClass="`ml-4 ${navItemClass}`" />
         </div>
         <!-- Burger button -->
@@ -43,7 +42,6 @@ provide('isOpened', isOpened)
         v-if="isOpened"
         class="grid gap-4 grid-cols-1 my-4 justify-items-end text-lg pt-8 lg:hidden"
       >
-        <!-- <SpeakerLink :cell="false" /> -->
         <NavItems :eachClass=navItemClass />
       </div>
     </div>
