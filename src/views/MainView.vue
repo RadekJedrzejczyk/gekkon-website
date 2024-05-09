@@ -4,6 +4,8 @@ import SpacedPair from '@/components/SpacedPair.vue'
 import CenteredHeader from '@/components/styled/CenteredHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
 import FilledButton from '@/components/styled/FilledButton.vue'
+
+const buttonClass = "w-4/5"
 </script>
 
 <template>
@@ -28,7 +30,7 @@ import FilledButton from '@/components/styled/FilledButton.vue'
         <CenteredHeader> Nie możemy się ciebie doczekać! </CenteredHeader>
       </template>
       <template #secondElem>
-        <FilledButton><router-link :to="{ name: 'submissions' }">Zapisy</router-link></FilledButton>
+        <FilledButton :additional-class="buttonClass"><router-link :to="{ name: 'submissions' }">Zapisy</router-link></FilledButton>
       </template>
     </SpacedPair>
     <SpacedPair>
@@ -53,7 +55,7 @@ import FilledButton from '@/components/styled/FilledButton.vue'
         <CenteredHeader> Plan wydarzenia pojawi się już wkrótce! </CenteredHeader>
       </template>
       <template #secondElem>
-        <FilledButton
+        <FilledButton :additional-class="buttonClass"
           ><router-link :to="{ name: 'schedule' }">Harmonogram</router-link></FilledButton
         >
       </template>
@@ -63,7 +65,7 @@ import FilledButton from '@/components/styled/FilledButton.vue'
         <CenteredHeader> Zapoznaj się z regulaminem </CenteredHeader>
       </template>
       <template #secondElem>
-        <FilledButton
+        <FilledButton :additional-class="buttonClass"
           ><router-link :to="{ name: 'regulations' }"
             >Regulamin konferencji</router-link
           ></FilledButton
@@ -75,7 +77,7 @@ import FilledButton from '@/components/styled/FilledButton.vue'
         <CenteredHeader> Masz pytania? </CenteredHeader>
       </template>
       <template #secondElem>
-        <FilledButton><router-link :to="{ name: 'contact' }">Skontaktuj się z nami!</router-link></FilledButton>
+        <FilledButton :additional-class="buttonClass"><router-link :to="{ name: 'contact' }">Skontaktuj się z nami!</router-link></FilledButton>
       </template>
     </SpacedPair>
   </SpacedColumn>
