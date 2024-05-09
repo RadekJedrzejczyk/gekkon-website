@@ -9,6 +9,7 @@ import banerUrl from "@/assets/baner.svg"
 
 const isOpened = ref(false)
 const navItemClass = "hover:bg-marshland-200 p-2 rounded-lg"
+const navAccentClass = "text-marshland-100 bg-accent-600 hover:bg-accent-700 p-2 rounded-lg font-bold"
 
 provide('isOpened', isOpened)
 </script>
@@ -28,8 +29,7 @@ provide('isOpened', isOpened)
         <router-link to="/" @click="isOpened = false"><LogoComponent /></router-link>
         <!-- Desktop menu -->
         <div class="hidden text-xl lg:flex lg:items-center">
-          <!-- <SpeakerLink :cell="false" /> -->
-          <NavItems :eachClass="`ml-4 ${navItemClass}`" />
+          <NavItems :eachClass="`ml-4 ${navItemClass}`" :accentClass="navAccentClass" />
         </div>
         <!-- Burger button -->
         <div class="inline lg:hidden">
@@ -43,8 +43,7 @@ provide('isOpened', isOpened)
         v-if="isOpened"
         class="grid gap-4 grid-cols-1 my-4 justify-items-end text-lg pt-8 lg:hidden"
       >
-        <!-- <SpeakerLink :cell="false" /> -->
-        <NavItems :eachClass=navItemClass />
+        <NavItems :eachClass="navItemClass" :accentClass="navAccentClass" />
       </div>
     </div>
   </nav>
