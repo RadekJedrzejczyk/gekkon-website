@@ -39,7 +39,7 @@ const router = createRouter({
     if (from.name === undefined) {
       return { top: 0 };
     }
-    return { el: 'nav' };
+    return { el: 'main', top: 120 };
   }
 })
 
