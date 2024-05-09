@@ -1,9 +1,9 @@
 <script setup lang="ts">
 import SpacedColumn from '@/components/SpacedColumn.vue'
 import SpacedPair from '@/components/SpacedPair.vue'
-import CenteredHeader from '@/components/CenteredHeader.vue'
-import TextParagraph from '@/components/TextParagraph.vue'
-import FilledButton from '@/components/FilledButton.vue'
+import CenteredHeader from '@/components/styled/CenteredHeader.vue'
+import StyledText from '@/components/styled/StyledText.vue'
+import FilledButton from '@/components/styled/FilledButton.vue'
 </script>
 
 <template>
@@ -13,14 +13,14 @@ import FilledButton from '@/components/FilledButton.vue'
         <CenteredHeader> Zapraszamy na GeKKoN! </CenteredHeader>
       </template>
       <template #secondElem>
-        <TextParagraph>
+        <StyledText>
           <span class="font-bold underline decoration-accent-600 decoration-4"
             >Górnośląska Kosmiczna Konferencja Naukowa</span
           >
           GeKKoN to wydarzenie organizowane przez studentów
           <span class="font-bold">Politechniki Śląskiej</span>. W tym roku już po raz drugi spotkamy
           się, aby podzielić się odkryciami i badaniami związanymi z przestrzenia kosmiczną!
-        </TextParagraph>
+        </StyledText>
       </template>
     </SpacedPair>
     <SpacedPair reversed>
@@ -36,7 +36,7 @@ import FilledButton from '@/components/FilledButton.vue'
         <CenteredHeader> Gdzie i kiedy? </CenteredHeader>
       </template>
       <template #secondElem>
-        <TextParagraph>
+        <StyledText>
           Widzimy się już
           <span class="font-bold underline decoration-accent-600 decoration-4"
             >14 listopada 2024 roku</span
@@ -45,7 +45,7 @@ import FilledButton from '@/components/FilledButton.vue'
           <span class="font-bold underline decoration-accent-600 decoration-4"
             >ul. Pszczyńskiej 85 w Gliwicach</span
           >.
-        </TextParagraph>
+        </StyledText>
       </template>
     </SpacedPair>
     <SpacedPair reversed>
