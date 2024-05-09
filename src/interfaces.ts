@@ -1,4 +1,5 @@
 export interface LinkItem {
   name: string,
-  title: string
+  title: string,
+  accent: boolean
 }

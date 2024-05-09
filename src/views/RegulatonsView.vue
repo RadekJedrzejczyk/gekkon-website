@@ -8,7 +8,10 @@ const regulationsPDFLink = '/docs/konferencja-gekkon-regulamin.pdf'
 <template>
   <CenteredHeader class="pb-8">Zapoznaj się z regulaminem konferencji</CenteredHeader>
   <div class="flex justify-center w-full">
-    <FilledButton bg-color="bg-accent-600" additional-class="w-96 hover:bg-accent-700 "
+    <FilledButton
+      bg-color="bg-accent-600"
+      text-color="text-marshland-100"
+      additional-class="w-96 hover:bg-accent-700 "
       ><a :href="regulationsPDFLink" target="_blank">Wersja PDF</a></FilledButton
     >
   </div>
