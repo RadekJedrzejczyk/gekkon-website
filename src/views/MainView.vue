@@ -5,7 +5,7 @@ import CenteredHeader from '@/components/styled/CenteredHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
 import FilledButton from '@/components/styled/FilledButton.vue'
 
-const buttonClass = "w-4/5"
+const buttonClass = "w-4/5 hover:bg-marshland-200 "
 </script>
 
 <template>
