@@ -1,6 +1,23 @@
+<script setup lang="ts">
+defineProps({
+  additionalClass: {
+    type: String,
+    default: ''
+  },
+  bgColor: {
+    type: String,
+    default: 'marshland-100'
+  },
+  textColor: {
+    type: String,
+    default: 'marshland-950'
+  }
+})
+</script>
+
 <template>
   <button
-    class="bg-marshland-100 text-marshland-950 text-center border-solid rounded-lg font-bold p-2 w-4/5"
+    :class="`bg-${bgColor} text-${textColor} text-center border-solid rounded-lg font-bold p-2 ${additionalClass}`"
   >
     <slot></slot>
   </button>
