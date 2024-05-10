@@ -1,23 +1,24 @@
 <script setup lang="ts">
-const headerStyle = 'font-medium text-3xl pb-4'
-const textStyle = 'text-xl leading-relaxed pb-8'
+import StyledHeader from '@/components/styled/StyledHeader.vue';
+import StyledText from '@/components/styled/StyledText.vue';
+
 const accentStyle = 'font-bold underline decoration-accent-600 decoration-4'
 
 const MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
 </script>
 
 <template>
-  <h2 :class="headerStyle">Masz pytania? Napisz do nas!</h2>
-  <p :class="textStyle">
+  <StyledHeader>Masz pytania? Napisz do nas!</StyledHeader>
+  <StyledText class="pb-4">
     Adres e-mail:
     <span :class="accentStyle">gekkon@aegee-gliwice.org</span>
-  </p>
-  <h2 :class="headerStyle">Gdzie nas znaleźć?</h2>
-  <p :class="textStyle">
+  </StyledText>
+  <StyledHeader>Gdzie nas znaleźć?</StyledHeader>
+  <StyledText class="pb-4">
     Centrum Kultury Studenckiej "Mrowisko" <br />
     ul. Pszczyńska 85 <br />
     44-100 Gliwice <br />
-  </p>
+  </StyledText>
   <div class="h-[32vh] md:h-[60vh]">
     <iframe
       width="100%"

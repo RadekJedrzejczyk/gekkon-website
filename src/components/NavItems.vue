@@ -3,14 +3,24 @@ import { type LinkItem } from '@/interfaces'
 import { inject } from 'vue'
 
 const navItems: Array<LinkItem> = [
-  { name: 'schedule', title: 'Harmonogram' },
-  { name: 'regulations', title: 'Regulamin' },
-  { name: 'contact', title: 'Kontakt' }
+  { name: 'submissions', title: 'Zgłoszenia', accent: true },
+  { name: 'schedule', title: 'Harmonogram', accent: false },
+  { name: 'regulations', title: 'Regulamin', accent: false },
+  { name: 'contact', title: 'Kontakt', accent: false }
 ]
 
 const isOpened = inject('isOpened')
 
-defineProps<{ eachClass?: string }>()
+defineProps({
+  eachClass: {
+    type: String,
+    default: ""
+  },
+  accentClass: {
+    type: String,
+    default: ""
+  }
+})
 </script>
 
 <template>
@@ -19,7 +29,7 @@ defineProps<{ eachClass?: string }>()
     :key="item.name"
     :to="{ name: item.name }"
     @click="isOpened = !isOpened"
-    :class="eachClass"
+    :class="`${item.accent && accentClass ? accentClass : eachClass}`"
   >
     {{ item.title }}
   </router-link>
