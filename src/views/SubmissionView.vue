@@ -49,7 +49,7 @@ const conferenceSubmissionAddress = 'https://forms.gle/aivRiBTdmm7ZPgKeA'
         </li>
         <li>
           Poster powinien być przesłany w pliku w formacie <AccentedText>pdf</AccentedText>. Plakaty
-          będą wystawiane w formacie <AccentedText>A1</AccentedText>.
+          będą wystawiane w formacie <AccentedText>A2</AccentedText>.
         </li>
         <li>
           Szczegóły dotyczące sesji posterowej można znaleźć w
