@@ -12,7 +12,7 @@ const regulationsPDFLink = '/docs/konferencja-gekkon-regulamin.pdf'
       <FilledButton
         bg-color="bg-accent-600"
         text-color="text-marshland-100"
-        additional-class="w-96 hover:bg-accent-700 "
+        additional-class="w-64 md:w-96 hover:bg-accent-700 "
         >Wersja PDF</FilledButton
       ></a
     >

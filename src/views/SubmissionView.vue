@@ -7,7 +7,7 @@ import AccentedText from '@/components/styled/AccentedText.vue'
 const posterSubmissionAdress = 'https://forms.gle/FxJvh3Y36zXTNAhr5'
 const conferenceSubmissionAddress = 'https://forms.gle/aivRiBTdmm7ZPgKeA'
 
-const buttonClass = 'w-96 hover:bg-accent-700'
+const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
 </script>
 
 <template>
