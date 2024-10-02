@@ -5,7 +5,7 @@ import CenteredHeader from '@/components/styled/CenteredHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
 import FilledButton from '@/components/styled/FilledButton.vue'
 
-const buttonClass = "w-4/5 hover:bg-marshland-200 "
+const buttonClass = 'w-64 lg:w-96 hover:bg-marshland-200'
 </script>
 
 <template>
@@ -30,7 +30,9 @@ const buttonClass = "w-4/5 hover:bg-marshland-200 "
         <CenteredHeader> Nie możemy się ciebie doczekać! </CenteredHeader>
       </template>
       <template #secondElem>
-        <FilledButton :additional-class="buttonClass"><router-link :to="{ name: 'submissions' }">Zapisy</router-link></FilledButton>
+        <router-link :to="{ name: 'submissions' }">
+          <FilledButton :additional-class="buttonClass">Zapisy</FilledButton></router-link
+        >
       </template>
     </SpacedPair>
     <SpacedPair>
@@ -55,8 +57,8 @@ const buttonClass = "w-4/5 hover:bg-marshland-200 "
         <CenteredHeader> Plan wydarzenia pojawi się już wkrótce! </CenteredHeader>
       </template>
       <template #secondElem>
-        <FilledButton :additional-class="buttonClass"
-          ><router-link :to="{ name: 'schedule' }">Harmonogram</router-link></FilledButton
+        <router-link :to="{ name: 'schedule' }">
+          <FilledButton :additional-class="buttonClass">Harmonogram</FilledButton></router-link
         >
       </template>
     </SpacedPair>
@@ -65,10 +67,10 @@ const buttonClass = "w-4/5 hover:bg-marshland-200 "
         <CenteredHeader> Zapoznaj się z regulaminem </CenteredHeader>
       </template>
       <template #secondElem>
-        <FilledButton :additional-class="buttonClass"
-          ><router-link :to="{ name: 'regulations' }"
-            >Regulamin konferencji</router-link
-          ></FilledButton
+        <router-link :to="{ name: 'regulations' }">
+          <FilledButton :additional-class="buttonClass"
+            >Regulamin konferencji</FilledButton
+          ></router-link
         >
       </template>
     </SpacedPair>
@@ -77,7 +79,11 @@ const buttonClass = "w-4/5 hover:bg-marshland-200 "
         <CenteredHeader> Masz pytania? </CenteredHeader>
       </template>
       <template #secondElem>
-        <FilledButton :additional-class="buttonClass"><router-link :to="{ name: 'contact' }">Skontaktuj się z nami!</router-link></FilledButton>
+        <router-link :to="{ name: 'contact' }">
+          <FilledButton :additional-class="buttonClass"
+            >Skontaktuj się z nami!</FilledButton
+          ></router-link
+        >
       </template>
     </SpacedPair>
   </SpacedColumn>

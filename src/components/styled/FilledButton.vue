@@ -19,6 +19,8 @@ defineProps({
   <button
     :class="`${bgColor} ${textColor} text-center border-solid rounded-lg font-bold p-2 ${additionalClass}`"
   >
-    <slot></slot>
+    <div>
+      <slot></slot>
+    </div>
   </button>
 </template>
