@@ -29,13 +29,15 @@ const conferenceSubmissionAddress = 'https://forms.gle/aivRiBTdmm7ZPgKeA'
       </ul>
     </StyledText>
     <div class="flex justify-center">
-      <FilledButton
-        bg-color="bg-accent-600"
-        text-color="text-marshland-100"
-        additional-class="w-96"
-      >
-        <a :href="conferenceSubmissionAddress" target="_blank">Zapisz się jako prelegent</a>
-      </FilledButton>
+      <a :href="conferenceSubmissionAddress" target="_blank">
+        <FilledButton
+          bg-color="bg-accent-600"
+          text-color="text-marshland-100"
+          additional-class="w-96"
+        >
+          Zapisz się jako prelegent
+        </FilledButton>
+      </a>
     </div>
   </section>
   <section class="py-4">
@@ -60,13 +62,15 @@ const conferenceSubmissionAddress = 'https://forms.gle/aivRiBTdmm7ZPgKeA'
       </ul>
     </StyledText>
     <div class="flex justify-center">
-      <FilledButton
-        bg-color="bg-accent-600"
-        text-color="text-marshland-100"
-        additional-class="w-96"
+      <a :href="posterSubmissionAdress" target="_blank">
+        <FilledButton
+          bg-color="bg-accent-600"
+          text-color="text-marshland-100"
+          additional-class="w-96"
+        >
+          Zapisz się na sesję posterową
+        </FilledButton></a
       >
-        <a :href="posterSubmissionAdress" target="_blank">Zapisz się na sesję posterową</a>
-      </FilledButton>
     </div>
   </section>
 </template>
