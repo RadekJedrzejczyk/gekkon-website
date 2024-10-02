@@ -6,6 +6,8 @@ import AccentedText from '@/components/styled/AccentedText.vue'
 
 const posterSubmissionAdress = 'https://forms.gle/FxJvh3Y36zXTNAhr5'
 const conferenceSubmissionAddress = 'https://forms.gle/aivRiBTdmm7ZPgKeA'
+
+const buttonClass = 'w-96 hover:bg-accent-700'
 </script>
 
 <template>
@@ -33,7 +35,7 @@ const conferenceSubmissionAddress = 'https://forms.gle/aivRiBTdmm7ZPgKeA'
         <FilledButton
           bg-color="bg-accent-600"
           text-color="text-marshland-100"
-          additional-class="w-96"
+          :additional-class="buttonClass"
         >
           Zapisz się jako prelegent
         </FilledButton>
@@ -66,7 +68,7 @@ const conferenceSubmissionAddress = 'https://forms.gle/aivRiBTdmm7ZPgKeA'
         <FilledButton
           bg-color="bg-accent-600"
           text-color="text-marshland-100"
-          additional-class="w-96"
+          :additional-class="buttonClass"
         >
           Zapisz się na sesję posterową
         </FilledButton></a
