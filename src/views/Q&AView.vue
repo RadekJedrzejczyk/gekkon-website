@@ -2,6 +2,8 @@
 import StyledHeader from '@/components/styled/StyledHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
 import AccentedText from '@/components/styled/AccentedText.vue'
+
+const MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
 </script>
 
 <template>
