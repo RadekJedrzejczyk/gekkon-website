@@ -2,7 +2,7 @@
 defineProps({
   size: {
     type: String,
-    default: '3xl'
+    default: '4xl'
   }
 })
 </script>
