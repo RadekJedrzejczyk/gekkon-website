@@ -6,6 +6,7 @@ const navItems: Array<LinkItem> = [
   { name: 'submissions', title: 'Zgłoszenia', accent: true },
   { name: 'schedule', title: 'Harmonogram', accent: false },
   { name: 'regulations', title: 'Regulamin', accent: false },
+  { name: 'q&a', title: 'Q&A', accent: false },
   { name: 'contact', title: 'Kontakt', accent: false }
 ]
 

@@ -79,11 +79,16 @@ const buttonClass = 'w-64 lg:w-96 hover:bg-marshland-200'
         <CenteredHeader> Masz pytania? </CenteredHeader>
       </template>
       <template #secondElem>
-        <router-link :to="{ name: 'contact' }">
-          <FilledButton :additional-class="buttonClass"
-            >Skontaktuj się z nami!</FilledButton
-          ></router-link
-        >
+        <div class="flex flex-col gap-y-4">
+          <router-link :to="{ name: 'q&a' }">
+            <FilledButton :additional-class="buttonClass">Q&A</FilledButton></router-link
+          >
+          <router-link :to="{ name: 'contact' }">
+            <FilledButton :additional-class="buttonClass"
+              >Skontaktuj się z nami!</FilledButton
+            ></router-link
+          >
+        </div>
       </template>
     </SpacedPair>
   </SpacedColumn>
