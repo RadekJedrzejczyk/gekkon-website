@@ -31,20 +31,25 @@ const router = createRouter({
       component: () => import('@/views/ContactView.vue')
     },
     {
-      path: "/zapisy",
-      name: "submissions",
-      component: () => import("@/views/SubmissionView.vue")
+      path: '/zapisy',
+      name: 'submissions',
+      component: () => import('@/views/SubmissionView.vue')
     },
     {
-      path: '/:notFound', 
+      path: '/pytania',
+      name: 'q&a',
+      component: () => import('@/views/Q&AView.vue')
+    },
+    {
+      path: '/:notFound',
       component: () => import('@/views/NotFoundView.vue')
     }
   ],
   scrollBehavior(to, from, savedPosition) {
     if (from.name === undefined) {
-      return { top: 0 };
+      return { top: 0 }
     }
-    return { el: 'main', top: 120 };
+    return { el: 'main', top: 120 }
   }
 })
 
