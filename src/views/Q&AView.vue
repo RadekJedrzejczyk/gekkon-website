@@ -25,7 +25,7 @@ const MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
       :src="`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjZJvQAMxEUcRv6WcVkkl7t0&key=${MAPS_API_KEY}`"
     ></iframe>
   </div>
-  <StyledText class="pb-4">
+  <StyledText class="p-4">
     <StyledHeader size="2xl">Z dworca PKP Gliwice:</StyledHeader>
     <ul class="list-disc">
       <li>
