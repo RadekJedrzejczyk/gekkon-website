@@ -4,6 +4,7 @@ const sponsors: { path: string; alt: string }[] = [
   { path: "/partners/KP_LABS_LOGO.png", alt: "Logo KP LABS" },
   { path: "/partners/Nauka_z_Kulturą_LOGO.jpg", alt: "Logo Nauka z Kulturą" },
   { path: "/partners/SKN_Silesian_Aerospace_Technologies_LOGO.png", alt: "Logo SKN SAT" },
+  { path: "/partners/Logo_astrohunters.png", alt: "Logo Astrohunters" },
 ]
 </script>
 
