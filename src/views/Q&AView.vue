@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import StyledHeader from '@/components/styled/StyledHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
+import AccentedText from '@/components/styled/AccentedText.vue'
 </script>
 
 <template>
@@ -23,35 +24,37 @@ import StyledText from '@/components/styled/StyledText.vue'
     ></iframe>
   </div>
   <StyledText class="pb-4">
-    Z dworca PKP Gliwice:
+    <StyledHeader size="2xl">Z dworca PKP Gliwice:</StyledHeader>
     <ul class="list-disc">
       <li>
-        Autobusem linii M1 (kierunek Katowice Mickiewicza) i M16 (kierunek Bytom Dworzec) z
-        przystanku Gliwice Dworzec do przystanku Gliwice Kujawska.
-      </li>
-      <li>
-        Autobusami linii 41, 8 i M18 z przystanku Gliwice Dworzec do przystanku Gliwice Komag.
-      </li>
-      <li>Piechotą - ok 20-25 minut spaceru.</li>
-    </ul>
-  </StyledText>
-  <StyledText class="pb-4">
-    Z dworca PKP Katowice:
-    <ul class="list-disc">
-      <li>
-        Autobusem linii M1 (kierunek Gliwice Centrum Przesiadkowe) z przystanku Mickiewicza 1 do
+        <AccentedText>Autobusem linii M1</AccentedText> (kierunek Katowice Mickiewicza) i
+        <AccentedText>M16</AccentedText> (kierunek Bytom Dworzec) z przystanku Gliwice Dworzec do
         przystanku Gliwice Kujawska.
       </li>
-      <li>Pociągiem Kolei Śląskich linia S1 z Katowic do Gliwic.</li>
+      <li>
+        <AccentedText>Autobusami linii 41</AccentedText>, <AccentedText>8</AccentedText> i
+        <AccentedText>M18</AccentedText> z przystanku Gliwice Dworzec do przystanku Gliwice Komag.
+      </li>
+      <li>Piechotą - ok <AccentedText>20-25 minut</AccentedText> spaceru.</li>
     </ul>
   </StyledText>
   <StyledText class="pb-4">
-    Samochodem:
+    <StyledHeader size="2xl">Z dworca PKP Katowice:</StyledHeader>
     <ul class="list-disc">
       <li>
-        Można zaparkować na niewielkim parkingu pod Mrowiskiem. Więcej miejsc parkingowych
-        dostępnych jest na terenie kampusu Politechniki Śląskiej, szczególnie pod budynkiem Centrum
-        Nowych Technologii (ul. Konarskiego 22b).
+        <AccentedText>Autobusem linii M1</AccentedText> (kierunek Gliwice Centrum Przesiadkowe) z
+        przystanku Mickiewicza 1 do przystanku Gliwice Kujawska.
+      </li>
+      <li><AccentedText>Pociągiem Kolei Śląskich linia S1</AccentedText> z Katowic do Gliwic.</li>
+    </ul>
+  </StyledText>
+  <StyledText class="pb-4">
+    <StyledHeader size="2xl">Samochodem:</StyledHeader>
+    <ul class="list-disc">
+      <li>
+        Można zaparkować na <AccentedText>niewielkim parkingu pod Mrowiskiem</AccentedText>. Więcej
+        miejsc parkingowych dostępnych jest na terenie kampusu Politechniki Śląskiej, szczególnie
+        <AccentedText>pod budynkiem Centrum Nowych Technologii (ul. Konarskiego 22b)</AccentedText>.
       </li>
     </ul>
   </StyledText>
