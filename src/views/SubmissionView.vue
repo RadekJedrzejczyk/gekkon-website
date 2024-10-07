@@ -49,7 +49,7 @@ const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
         <li>Zapisy trwają do <AccentedText>31.10.2024 roku</AccentedText>.</li>
         <li>
           Obecnośc na konferencji nie jest wymagana, a plakat może być prezentowany przez
-          maksymalnie <AccentedText>2 osoby</AccentedText>.
+          maksymalnie <AccentedText>1 osobę</AccentedText>.
         </li>
         <li>
           Poster powinien być przesłany w pliku w formacie <AccentedText>pdf</AccentedText>. Plakaty
