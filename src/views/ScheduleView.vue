@@ -44,7 +44,8 @@ const items: { time: String; name: String }[] = [
       <tbody>
         <tr v-for="item in items" :key="items.indexOf(item)">
           <td :class="tdStyle">{{ item.time }}</td>
-          <td :class="tdStyle">{{ item.name }}</td>
+          <td v-if="item.name" :class="tdStyle">{{ item.name }}</td>
+          <td class="border-b border-marshland-600 p-4 pl-8 text-marshland-400 italic" v-else>Szczegóły wkrótce</td>
         </tr>
       </tbody>
     </table>
