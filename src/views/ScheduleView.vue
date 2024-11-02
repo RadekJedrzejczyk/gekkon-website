@@ -9,7 +9,7 @@ const items: { time: String; name: String }[] = [
   { time: '9:00', name: 'Rozpoczęcie' },
   { time: '9:10', name: 'Bogusław Ziębowicz i kosmiczna muzyka' },
   { time: '9:35', name: 'KP Labs o Intuition-1' },
-  { time: '10:00', name: '' },
+  { time: '10:00', name: 'Astrohunters' },
   { time: '10:25', name: 'Przerwa kawowa' },
   { time: '10:40', name: '' },
   { time: '11:05', name: '' },
