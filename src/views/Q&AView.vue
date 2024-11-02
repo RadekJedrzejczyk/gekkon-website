@@ -3,7 +3,7 @@ import StyledHeader from '@/components/styled/StyledHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
 import AccentedText from '@/components/styled/AccentedText.vue'
 
-const MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
+const MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY
 </script>
 
 <template>
@@ -25,21 +25,32 @@ const MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY;
       :src="`https://www.google.com/maps/embed/v1/place?q=place_id:ChIJjZJvQAMxEUcRv6WcVkkl7t0&key=${MAPS_API_KEY}`"
     ></iframe>
   </div>
-  <StyledText class="py-4">
+  <div class="py-4">
     <StyledHeader size="2xl">Z dworca PKP Gliwice:</StyledHeader>
-    <ul class="list-disc">
-      <li>
-        <AccentedText>Autobusem linii M1</AccentedText> (kierunek Katowice Mickiewicza) i
-        <AccentedText>M16</AccentedText> (kierunek Bytom Dworzec) z przystanku Gliwice Dworzec do
-        przystanku Gliwice Kujawska.
-      </li>
-      <li>
-        <AccentedText>Autobusami linii 41</AccentedText>, <AccentedText>8</AccentedText> i
-        <AccentedText>M18</AccentedText> z przystanku Gliwice Dworzec do przystanku Gliwice Komag.
-      </li>
-      <li>Piechotą - ok <AccentedText>20-25 minut</AccentedText> spaceru.</li>
-    </ul>
-  </StyledText>
+    <StyledText class="pb-2">
+      <StyledHeader size="xl">Autobusami linii</StyledHeader>
+      <ul class="list-disc">
+        <li><AccentedText>M1</AccentedText> kierunek Katowice Mickiwicza</li>
+        <li>
+          <AccentedText>M16</AccentedText> kierunek Bytom Dworzec lub Osiedle Wieczorka Dworzec
+        </li>
+        <li><AccentedText>M18</AccentedText> kierunek Tychy Osidle "Z1"</li>
+      </ul>
+      Z przystanku Gliwice Dworzec do przystanku Gliwice Kujawska.
+    </StyledText>
+    <StyledText class="pb-2">
+      <StyledHeader size="xl">Autobusami linii</StyledHeader>
+      <AccentedText>8</AccentedText>, <AccentedText>41</AccentedText>,
+      <AccentedText>58</AccentedText>, <AccentedText>669</AccentedText> z przystanku Gliwice Dworzec
+      do przystanku Gliwice Komag.
+    </StyledText>
+    <StyledText class="pb-2">
+      <StyledHeader size="xl">Autobusami linii</StyledHeader>
+      <AccentedText>32</AccentedText>, <AccentedText>232</AccentedText>,
+      <AccentedText>932</AccentedText> z przystanku Gliwice Plac Piastów do przystaku Gliwice
+      Komag.</StyledText
+    >
+  </div>
   <StyledText class="pb-4">
     <StyledHeader size="2xl">Z dworca PKP Katowice:</StyledHeader>
     <ul class="list-disc">
