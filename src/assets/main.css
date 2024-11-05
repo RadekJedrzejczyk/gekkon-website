@@ -18,7 +18,7 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(#171918 50%, #363938 50%);
+  background-color: #363938;
 }
 
 #app {
