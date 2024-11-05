@@ -16,6 +16,11 @@
   font-size: normal;
 }
 
+body {
+  min-height: 100vh;
+  background: linear-gradient(#171918 50%, #363938 50%);
+}
+
 #app {
   font-weight: normal;
   min-height: 100vh;
