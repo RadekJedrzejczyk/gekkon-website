@@ -3,6 +3,7 @@ import SpacedColumn from '@/components/SpacedColumn.vue'
 import SpacedPair from '@/components/SpacedPair.vue'
 import CenteredHeader from '@/components/styled/CenteredHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
+import AccentedText from '@/components/styled/AccentedText.vue'
 import FilledButton from '@/components/styled/FilledButton.vue'
 
 const buttonClass = 'w-64 lg:w-96 hover:bg-marshland-200'
@@ -16,12 +17,11 @@ const buttonClass = 'w-64 lg:w-96 hover:bg-marshland-200'
       </template>
       <template #secondElem>
         <StyledText>
-          <span class="font-bold underline decoration-accent-600 decoration-4"
-            >Górnośląska Kosmiczna Konferencja Naukowa</span
-          >
-          GeKKoN to wydarzenie organizowane przez studentów
-          <span class="font-bold">Politechniki Śląskiej</span>. W tym roku już po raz drugi spotkamy
-          się, aby podzielić się odkryciami i badaniami związanymi z przestrzenia kosmiczną!
+          <AccentedText>Górnośląska Kosmiczna Konferencja Naukowa GeKKoN</AccentedText>
+          to wydarzenie organizowane przez studentów
+          <AccentedText>Politechniki Śląskiej</AccentedText>
+          . W tym roku już po raz drugi spotkamy się, aby podzielić się odkryciami i badaniami
+          związanymi z przestrzenia kosmiczną!
         </StyledText>
       </template>
     </SpacedPair>
@@ -42,13 +42,10 @@ const buttonClass = 'w-64 lg:w-96 hover:bg-marshland-200'
       <template #secondElem>
         <StyledText>
           Widzimy się już
-          <span class="font-bold underline decoration-accent-600 decoration-4"
-            >14 listopada 2024 roku</span
-          >
-          w <span class="font-bold">Centrum Kultury Studenckiej "Mrowisko"</span> przy
-          <span class="font-bold underline decoration-accent-600 decoration-4"
-            >ul. Pszczyńskiej 85 w Gliwicach</span
-          >.
+          <AccentedText>14 listopada 2024 roku</AccentedText>
+          w
+          <AccentedText>Centrum Kultury Studenckiej "Mrowisko"</AccentedText> przy
+          <AccentedText>ul. Pszczyńskiej 85 w Gliwicach</AccentedText>.
         </StyledText>
       </template>
     </SpacedPair>
