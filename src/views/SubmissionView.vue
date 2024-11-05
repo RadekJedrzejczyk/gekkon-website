@@ -3,6 +3,7 @@ import StyledHeader from '@/components/styled/StyledHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
 import FilledButton from '@/components/styled/FilledButton.vue'
 import AccentedText from '@/components/styled/AccentedText.vue'
+import LinkText from '@/components/styled/LinkText.vue'
 
 const posterSubmissionAdress = 'https://forms.gle/FxJvh3Y36zXTNAhr5'
 const conferenceSubmissionAddress = 'https://forms.gle/aivRiBTdmm7ZPgKeA'
@@ -24,7 +25,9 @@ const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
           Szczegóły uczestnictwa w konferencji i informacje na temat wygłaszania referatu można
           znaleźć w
           <AccentedText
-            ><router-link :to="{ name: 'regulations' }">regulaminie</router-link></AccentedText
+            ><LinkText
+              ><router-link :to="{ name: 'regulations' }">regulaminie</router-link></LinkText
+            ></AccentedText
           >.
         </li>
       </ul>
@@ -56,7 +59,9 @@ const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
         <li>
           Szczegóły dotyczące sesji posterowej można znaleźć w
           <AccentedText
-            ><router-link :to="{ name: 'regulations' }">regulaminie</router-link></AccentedText
+            ><LinkText
+              ><router-link :to="{ name: 'regulations' }">regulaminie</router-link></LinkText
+            ></AccentedText
           >.
         </li>
       </ul>
