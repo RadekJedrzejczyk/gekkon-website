@@ -15,7 +15,6 @@ const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
     <StyledHeader>Złoszenia prelegentów</StyledHeader>
     <StyledText class="pb-4">
       <ul class="list-disc">
-        <li>Zapisy trwają do <AccentedText>31.10.2024 roku</AccentedText>.</li>
         <li>Prezentacja referatu może trwać maksymalnie <AccentedText>20 minut</AccentedText>.</li>
         <li>
           Refereat może być wygłoszony przez maksymalnie <AccentedText>2 osoby</AccentedText>.
@@ -46,7 +45,6 @@ const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
     <StyledHeader>Zapisy na sesję posterową</StyledHeader>
     <StyledText class="pb-4">
       <ul class="list-disc">
-        <li>Zapisy trwają do <AccentedText>31.10.2024 roku</AccentedText>.</li>
         <li>
           Obecnośc na konferencji nie jest wymagana, a plakat może być prezentowany przez
           maksymalnie <AccentedText>1 osobę</AccentedText>.
