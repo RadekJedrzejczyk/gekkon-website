@@ -75,7 +75,7 @@ const items: { time: String; name: String; type: itemType }[] = [
           <td :class="tdStyle">{{ item.time }}</td>
           <td
             v-if="item.name"
-            :class="`${tdStyle} ${item.type == itemType.organizational ? 'italic text-marshland-300' : ''}`"
+            :class="`${tdStyle} ${item.type == itemType.organizational ? 'text-marshland-300' : ''}`"
           >
             {{ item.name }}
           </td>
