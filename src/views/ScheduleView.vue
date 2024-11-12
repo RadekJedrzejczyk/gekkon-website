@@ -47,11 +47,23 @@ const items: { time: String; name: String; type: itemType }[] = [
     name: 'Ignacy Woźniak: Za Plutona - o podróżach poza Układ Słoneczny',
     type: itemType.lecture
   },
-  { time: '14:15', name: '', type: itemType.lecture },
+  {
+    time: '14:15',
+    name: 'Michał Wieczorek: Metody sztucznej inteligencji w analizie danych hiperspektralnych',
+    type: itemType.lecture
+  },
   { time: '14:40', name: 'Przerwa kawowa', type: itemType.organizational },
-  { time: '15:00', name: '', type: itemType.lecture },
-  { time: '15:25', name: '', type: itemType.lecture },
-  { time: '15:50', name: '', type: itemType.lecture },
+  {
+    time: '15:00',
+    name: 'Zosia Budzik: Krótka historia eksploracji Marsa',
+    type: itemType.lecture
+  },
+  {
+    time: '15:25',
+    name: 'Dawid Perzyński: Kiedy zdobędziemy Układ Słoneczny? ',
+    type: itemType.lecture
+  },
+  { time: '15:50', name: 'Beniamin Kopiec: Tajemnice Tytana', type: itemType.lecture },
   { time: '16:15', name: 'Zakończenie', type: itemType.organizational },
   { time: '16:30', name: 'Afterparty', type: itemType.organizational }
 ]
