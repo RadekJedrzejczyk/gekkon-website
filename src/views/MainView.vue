@@ -25,13 +25,23 @@ const buttonClass = 'w-64 lg:w-96 hover:bg-marshland-200'
         </StyledText>
       </template>
     </SpacedPair>
-    <SpacedPair reversed>
+    <!-- <SpacedPair reversed>
       <template #firstElem>
         <CenteredHeader> Nie możemy się ciebie doczekać! </CenteredHeader>
       </template>
       <template #secondElem>
         <router-link :to="{ name: 'submissions' }">
           <FilledButton :additional-class="buttonClass">Zapisy</FilledButton></router-link
+        >
+      </template>
+    </SpacedPair> -->
+    <SpacedPair reversed>
+      <template #firstElem>
+        <CenteredHeader> Oto postery zaprezentowane w czasie wydarzenia </CenteredHeader>
+      </template>
+      <template #secondElem>
+        <router-link :to="{ name: 'posters' }">
+          <FilledButton :additional-class="buttonClass">Postery</FilledButton></router-link
         >
       </template>
     </SpacedPair>
