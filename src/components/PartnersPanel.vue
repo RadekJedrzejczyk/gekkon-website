@@ -13,7 +13,7 @@ const sponsors: { path: string; alt: string; bg?: string }[] = [
   <div v-if="sponsors.length" class="py-24 w-2/3 mx-auto">
     <p class="font-bold text-center text-5xl">Partnerzy wydarzenia</p>
     <div class="pt-16 flex flex-wrap justify-center">
-      <div v-for="sponsor in sponsors" :key="sponsors.indexOf(sponsor)">
+      <div v-for="sponsor in sponsors" :key="`sponsor-${sponsors.indexOf(sponsor)}`">
         <img
           :class="`${sponsor.bg ? sponsor.bg : ''} my-8 max-h-40 md:h-40 md:mx-8`"
           :src="sponsor.path"
