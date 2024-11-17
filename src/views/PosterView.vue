@@ -4,7 +4,7 @@ import StyledHeader from '@/components/styled/StyledHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
 import FilledButton from '@/components/styled/FilledButton.vue'
 
-pdfjs.GlobalWorkerOptions.workerSrc = '../../node_modules/pdfjs-dist/build/pdf.worker.mjs'
+pdfjs.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.8.69/build/pdf.mjs'
 
 const posters: { path: string; title: string; authors: string[] }[] = [
   {
