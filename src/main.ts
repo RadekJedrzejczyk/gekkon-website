@@ -36,6 +36,11 @@ const router = createRouter({
       component: () => import('@/views/SubmissionView.vue')
     },
     {
+      path: '/postery',
+      name: 'posters',
+      component: () => import('@/views/PosterView.vue')
+    },
+    {
       path: '/pytania',
       name: 'q&a',
       component: () => import('@/views/Q&AView.vue')
