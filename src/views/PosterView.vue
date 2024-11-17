@@ -1,66 +1,147 @@
 <script setup lang="ts">
+import * as pdfjs from 'pdfjs-dist'
 import StyledHeader from '@/components/styled/StyledHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
 import FilledButton from '@/components/styled/FilledButton.vue'
 
-const posters: { path: string; title: string; authors: string }[] = [
+pdfjs.GlobalWorkerOptions.workerSrc = '../../node_modules/pdfjs-dist/build/pdf.worker.mjs'
+
+const posters: { path: string; title: string; authors: string[] }[] = [
   {
     path: '/posters/24Gekkon-SKN_BP - Łukasz Misztal.pdf',
     title: 'Analiza składu ziarnowego regolitu księżycowego z próbą jego odtworzenia',
-    authors: 'Laura Jaśniak, Łukasz Misztal, Magdalena Mrozek, Dawid Mrozek, Mateusz Smolana'
+    authors: [
+      'Laura Jaśniak',
+      'Łukasz Misztal',
+      'Magdalena Mrozek',
+      'Dawid Mrozek',
+      'Mateusz Smolana'
+    ]
   },
   {
     path: '/posters/ALO_Budowa_mikrosatelity_poster - Małgorzata Szymaszek.pdf',
     title: 'Budowa mikrosatelity z wykorzystaniem mikrokontrolera Arduino',
-    authors: 'Magdalena Grabysz, Przemysław Brzeziński, Jakub Fraś, Eryk Kandzior, Mirosław Kowal'
+    authors: [
+      'Magdalena Grabysz',
+      'Przemysław Brzeziński',
+      'Jakub Fraś',
+      'Eryk Kandzior',
+      'Mirosław Kowal'
+    ]
   },
   {
     path: '/posters/Długoterminowe loty kosmiczne - wpływ na ośrodkowy układ nerwowy-2.pdf',
     title: 'Długoterminowe loty kosmiczne - wpływ na ośrodkowy układ nerwowy',
-    authors: 'Zuzanna Szostok'
+    authors: ['Zuzanna Szostok']
   },
   {
     path: '/posters/IKAR-poster.pdf',
     title: 'Analiza materiałów wykonania silników na paliwo stałe typu karmelek (R-Candy)',
-    authors: 'Hanna Bujak'
+    authors: ['Hanna Bujak']
   },
   {
     path: '/posters/KP Labs_poster_anomaly_detection.pdf',
     title:
       'Annotating large satelite telemetry dataset for ESA international AI anomaly detection benchmark',
-    authors:
-      'Krzysztof Kotowski, Christoph Haskamp, Bogdan Ruszczak, Jacek Andrzejewski, Jakub Nalepa'
+    authors: [
+      'Krzysztof Kotowski',
+      'Christoph Haskamp',
+      'Bogdan Ruszczak',
+      'Jacek Andrzejewski',
+      'Jakub Nalepa'
+    ]
   },
   {
     path: 'public/posters/Poster Wojciech SIkorski - Wojciech Sikorski.pdf',
     title:
       'Adaptacyjne technologie w przestrzeni kosmicznej: Nowe możliwości dla europejskich misji',
-    authors: 'Wojciech Sikorski'
+    authors: ['Wojciech Sikorski']
   },
   {
     path: '/posters/SAT.pdf',
     title:
       'A Space Odyssey - Cell culture version. A proposal for a system enabling the study of the impact of cosmic radiation on model cell lines',
-    authors:
-      'Daria Kałużyńska, Nikodem Bartnik, Tomasz Golonek, Stanisław Lisek, Jonasz Michalik, Jacek Pindel, Tomasz Błachowicz'
+    authors: [
+      'Daria Kałużyńska',
+      'Nikodem Bartnik',
+      'Tomasz Golonek',
+      'Stanisław Lisek',
+      'Jonasz Michalik',
+      'Jacek Pindel',
+      'Tomasz Błachowicz'
+    ]
   }
 ]
+
+function renderThumbnail(src: string, id: string) {
+  var loadingTask = pdfjs.getDocument(src)
+  loadingTask.promise.then((pdf) => {
+    pdf.getPage(1).then((page) => {
+      var scale = 0.5
+      var viewport = page.getViewport({ scale: scale })
+      var outputScale = window.devicePixelRatio || 1
+
+      var canvas = document.getElementById(id) as HTMLCanvasElement
+      if (!canvas) return
+
+      var context = canvas.getContext('2d') as CanvasRenderingContext2D
+
+      canvas.width = Math.floor(viewport.width * outputScale)
+      canvas.height = Math.floor(viewport.height * outputScale)
+      canvas.style.width = Math.floor(viewport.width) + 'px'
+      canvas.style.height = Math.floor(viewport.height) + 'px'
+
+      var transform = outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : undefined
+
+      var renderContext = {
+        canvasContext: context,
+        transform: transform,
+        viewport: viewport
+      }
+      page.render(renderContext)
+    })
+  })
+}
+
+const renderThumbnails = window.innerWidth > 1024
+
+if (renderThumbnails) {
+  posters.forEach((poster) => {
+    const id = `poster-${posters.indexOf(poster)}`
+    renderThumbnail(poster.path, id)
+  })
+}
 </script>
 
 <template>
   <div v-if="posters.length">
-    <div v-for="poster in posters" :key="`poster-${posters.indexOf(poster)}`" class="py-4">
-      <StyledHeader>{{ poster.title }}</StyledHeader>
-      <StyledText>{{ poster.authors }}</StyledText>
-      <div class="flex justify-center w-full">
-        <a :href="poster.path" target="_blank">
-          <FilledButton
-            bg-color="bg-accent-600"
-            text-color="text-marshland-100"
-            additional-class="w-64 md:w-96 hover:bg-accent-700 "
-            >Otwórz poster</FilledButton
-          ></a
-        >
+    <StyledHeader>Prace zaprezentowane w czasie sesji posterowej</StyledHeader>
+    <div v-for="poster in posters" :key="`poster-${posters.indexOf(poster)}`" class="py-8">
+      <StyledHeader size="2xl">{{ poster.title }}</StyledHeader>
+      <div class="flex flex-row gap-4 justify-around">
+        <div v-if="renderThumbnails">
+          <canvas :id="`poster-${posters.indexOf(poster)}`" />
+        </div>
+        <div class="flex flex-col justify-around">
+          <StyledText>
+            <p
+              v-for="author in poster.authors"
+              :key="`poster-${posters.indexOf(poster)}-author-${poster.authors.indexOf(author)}`"
+            >
+              {{ author }}
+            </p>
+          </StyledText>
+          <div class="flex justify-center w-full py-8">
+            <a :href="poster.path" target="_blank">
+              <FilledButton
+                bg-color="bg-accent-600"
+                text-color="text-marshland-100"
+                additional-class="w-64 md:w-96 hover:bg-accent-700 "
+                >Otwórz poster</FilledButton
+              ></a
+            >
+          </div>
+        </div>
       </div>
     </div>
   </div>
