@@ -8,7 +8,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4
 
 const posters: { path: string; title: string; authors: string[] }[] = [
   {
-    path: '/posters/24Gekkon-SKN_BP - Łukasz Misztal.pdf',
+    path: '/posters/poster01.pdf',
     title: 'Analiza składu ziarnowego regolitu księżycowego z próbą jego odtworzenia',
     authors: [
       'Laura Jaśniak',
@@ -19,7 +19,7 @@ const posters: { path: string; title: string; authors: string[] }[] = [
     ]
   },
   {
-    path: '/posters/ALO_Budowa_mikrosatelity_poster - Małgorzata Szymaszek.pdf',
+    path: '/posters/poster02.pdf',
     title: 'Budowa mikrosatelity z wykorzystaniem mikrokontrolera Arduino',
     authors: [
       'Magdalena Grabysz',
@@ -30,17 +30,17 @@ const posters: { path: string; title: string; authors: string[] }[] = [
     ]
   },
   {
-    path: '/posters/Długoterminowe loty kosmiczne - wpływ na ośrodkowy układ nerwowy-2.pdf',
+    path: '/posters/poster03.pdf',
     title: 'Długoterminowe loty kosmiczne - wpływ na ośrodkowy układ nerwowy',
     authors: ['Zuzanna Szostok']
   },
   {
-    path: '/posters/IKAR-poster.pdf',
+    path: '/posters/poster04.pdf',
     title: 'Analiza materiałów wykonania silników na paliwo stałe typu karmelek (R-Candy)',
     authors: ['Hanna Bujak']
   },
   {
-    path: '/posters/KP Labs_poster_anomaly_detection.pdf',
+    path: '/posters/poster05.pdf',
     title:
       'Annotating large satelite telemetry dataset for ESA international AI anomaly detection benchmark',
     authors: [
@@ -52,13 +52,13 @@ const posters: { path: string; title: string; authors: string[] }[] = [
     ]
   },
   {
-    path: 'public/posters/Poster Wojciech SIkorski - Wojciech Sikorski.pdf',
+    path: '/posters/poster06.pdf',
     title:
       'Adaptacyjne technologie w przestrzeni kosmicznej: Nowe możliwości dla europejskich misji',
     authors: ['Wojciech Sikorski']
   },
   {
-    path: '/posters/SAT.pdf',
+    path: '/posters/poster07.pdf',
     title:
       'A Space Odyssey - Cell culture version. A proposal for a system enabling the study of the impact of cosmic radiation on model cell lines',
     authors: [
