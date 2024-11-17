@@ -1,10 +1,10 @@
 <script setup lang="ts">
-import * as pdfjs from 'pdfjs-dist'
-import StyledHeader from '@/components/styled/StyledHeader.vue'
-import StyledText from '@/components/styled/StyledText.vue'
-import FilledButton from '@/components/styled/FilledButton.vue'
+import * as pdfjs from 'pdfjs-dist';
+import StyledHeader from '@/components/styled/StyledHeader.vue';
+import StyledText from '@/components/styled/StyledText.vue';
+import FilledButton from '@/components/styled/FilledButton.vue';
 
-pdfjs.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.8.69/build/pdf.mjs'
+pdfjs.GlobalWorkerOptions.workerSrc = 'https://cdn.jsdelivr.net/npm/pdfjs-dist@4.8.69/build/pdf.worker.mjs';
 
 const posters: { path: string; title: string; authors: string[] }[] = [
   {
@@ -76,41 +76,46 @@ const posters: { path: string; title: string; authors: string[] }[] = [
 function renderThumbnail(src: string, id: string) {
   var loadingTask = pdfjs.getDocument(src)
   loadingTask.promise.then((pdf) => {
-    pdf.getPage(1).then((page) => {
-      var scale = 0.5
-      var viewport = page.getViewport({ scale: scale })
-      var outputScale = window.devicePixelRatio || 1
+    pdf
+      .getPage(1)
+      .then((page) => {
+        var scale = 0.5
+        var viewport = page.getViewport({ scale: scale })
+        var outputScale = window.devicePixelRatio || 1
 
-      var canvas = document.getElementById(id) as HTMLCanvasElement
-      if (!canvas) return
+        var canvas = document.getElementById(id) as HTMLCanvasElement
+        if (!canvas) return
 
-      var context = canvas.getContext('2d') as CanvasRenderingContext2D
+        var context = canvas.getContext('2d') as CanvasRenderingContext2D
 
-      canvas.width = Math.floor(viewport.width * outputScale)
-      canvas.height = Math.floor(viewport.height * outputScale)
-      canvas.style.width = Math.floor(viewport.width) + 'px'
-      canvas.style.height = Math.floor(viewport.height) + 'px'
+        canvas.width = Math.floor(viewport.width * outputScale)
+        canvas.height = Math.floor(viewport.height * outputScale)
+        canvas.style.width = Math.floor(viewport.width) + 'px'
+        canvas.style.height = Math.floor(viewport.height) + 'px'
 
-      var transform = outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : undefined
+        var transform = outputScale !== 1 ? [outputScale, 0, 0, outputScale, 0, 0] : null
 
-      var renderContext = {
-        canvasContext: context,
-        transform: transform,
-        viewport: viewport
-      }
-      page.render(renderContext)
-    })
-  })
+        var renderContext = {
+          canvasContext: context,
+          transform: transform ? transform : undefined,
+          viewport: viewport
+        }
+        page.render(renderContext)
+      })
+      .catch((error) => {
+        console.error(`Error loading PDF: ${error.message}`);
+      });
+  });
 }
 
 const renderThumbnails = window.innerWidth > 1024
 
 if (renderThumbnails) {
-  posters.forEach((poster) => {
-    const id = `poster-${posters.indexOf(poster)}`
-    renderThumbnail(poster.path, id)
-  })
-}
+  posters.forEach((poster, index) => {
+    const id = `poster-${index}`;
+    renderThumbnail(poster.path, id);
+  });
+};
 </script>
 
 <template>
