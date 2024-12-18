@@ -61,7 +61,10 @@ const buttonClass = 'w-64 lg:w-96 hover:bg-marshland-200'
     </SpacedPair>
     <SpacedPair reversed>
       <template #firstElem>
-        <CenteredHeader> Plan wydarzenia pojawi się już wkrótce! </CenteredHeader>
+        <!-- <CenteredHeader> Plan wydarzenia pojawi się już wkrótce! </CenteredHeader> -->
+        <a href="https://www.youtube.com/live/IRl5jmq-dIA" target="_blank">
+          <FilledButton :additional-class="buttonClass">Nagranie konferencji</FilledButton>
+         </a>
       </template>
       <template #secondElem>
         <router-link :to="{ name: 'schedule' }">
