@@ -2,12 +2,14 @@
 import StyledHeader from '@/components/styled/StyledHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
 import AccentedText from '@/components/styled/AccentedText.vue'
+import LinkText from '@/components/styled/LinkText.vue'
 
 const MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY
+const discordServerAddress = 'https://discord.gg/xXTejbunjC'
 </script>
 
 <template>
-  <StyledHeader>Jak dotrzeć na konferencję?</StyledHeader>
+  <!-- <StyledHeader>Jak dotrzeć na konferencję?</StyledHeader>
   <StyledText class="pb-4"
     >Konferencja odbędzie się w budynku Centrum Kultury Studenckiej "Mrowisko":</StyledText
   >
@@ -70,5 +72,15 @@ const MAPS_API_KEY = import.meta.env.VITE_MAPS_API_KEY
         <AccentedText>pod budynkiem Centrum Nowych Technologii (ul. Konarskiego 22b)</AccentedText>.
       </li>
     </ul>
-  </StyledText>
+  </StyledText> -->
+  <StyledHeader>Jak zorganizowana zostanie konferencja?</StyledHeader>
+  <StyledText>Konferencja zostanie przeprowadzona za pośrednictwem platformy Discord.</StyledText>
+  <StyledText
+    >Adres serwera Discord konferencji:
+    <AccentedText
+      ><LinkText
+        ><a :href="discordServerAddress">{{ discordServerAddress }}</a></LinkText
+      ></AccentedText
+    ></StyledText
+  >
 </template>

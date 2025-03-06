@@ -4,38 +4,42 @@ import SpacedPair from '@/components/SpacedPair.vue'
 import CenteredHeader from '@/components/styled/CenteredHeader.vue'
 import StyledText from '@/components/styled/StyledText.vue'
 import AccentedText from '@/components/styled/AccentedText.vue'
+import LinkText from '@/components/styled/LinkText.vue'
 import FilledButton from '@/components/styled/FilledButton.vue'
 
 const buttonClass = 'w-64 lg:w-96 hover:bg-marshland-200'
+const discordServerAddress = 'https://discord.gg/xXTejbunjC'
 </script>
 
 <template>
   <SpacedColumn>
     <SpacedPair>
       <template #firstElem>
-        <CenteredHeader> Zapraszamy na GeKKoN! </CenteredHeader>
+        <CenteredHeader>
+          Zapraszamy na <br />
+          e-GeKKoN!
+        </CenteredHeader>
       </template>
       <template #secondElem>
         <StyledText>
           <AccentedText>Górnośląska Kosmiczna Konferencja Naukowa GeKKoN</AccentedText>
           to wydarzenie organizowane przez studentów
-          <AccentedText>Politechniki Śląskiej</AccentedText>
-          . W tym roku już po raz drugi spotkamy się, aby podzielić się odkryciami i badaniami
-          związanymi z przestrzenia kosmiczną!
+          <AccentedText>Politechniki Śląskiej</AccentedText>. W tym roku już po raz trzeci spotkamy
+          się, aby podzielić się odkryciami i badaniami związanymi z przestrzenia kosmiczną!
         </StyledText>
       </template>
     </SpacedPair>
-    <!-- <SpacedPair reversed>
+    <SpacedPair reversed>
       <template #firstElem>
-        <CenteredHeader> Nie możemy się ciebie doczekać! </CenteredHeader>
+        <CenteredHeader> Konferencja odbywa się na Discordzie! </CenteredHeader>
       </template>
       <template #secondElem>
         <router-link :to="{ name: 'submissions' }">
           <FilledButton :additional-class="buttonClass">Zapisy</FilledButton></router-link
         >
       </template>
-    </SpacedPair> -->
-    <SpacedPair reversed>
+    </SpacedPair>
+    <!-- <SpacedPair reversed>
       <template #firstElem>
         <CenteredHeader> Oto postery zaprezentowane w czasie wydarzenia </CenteredHeader>
       </template>
@@ -44,7 +48,7 @@ const buttonClass = 'w-64 lg:w-96 hover:bg-marshland-200'
           <FilledButton :additional-class="buttonClass">Postery</FilledButton></router-link
         >
       </template>
-    </SpacedPair>
+    </SpacedPair> -->
     <SpacedPair>
       <template #firstElem>
         <CenteredHeader> Gdzie i kiedy? </CenteredHeader>
@@ -52,19 +56,22 @@ const buttonClass = 'w-64 lg:w-96 hover:bg-marshland-200'
       <template #secondElem>
         <StyledText>
           Widzimy się już
-          <AccentedText>14 listopada 2024 roku</AccentedText>
-          w
-          <AccentedText>Centrum Kultury Studenckiej "Mrowisko"</AccentedText> przy
-          <AccentedText>ul. Pszczyńskiej 85 w Gliwicach</AccentedText>.
+          <AccentedText>25 marca 2025 roku</AccentedText>
+          na
+          <AccentedText
+            ><LinkText
+              ><a :href="discordServerAddress">serwerze Discord konferencji</a></LinkText
+            ></AccentedText
+          >.
         </StyledText>
       </template>
     </SpacedPair>
     <SpacedPair reversed>
       <template #firstElem>
-        <!-- <CenteredHeader> Plan wydarzenia pojawi się już wkrótce! </CenteredHeader> -->
-        <a href="https://www.youtube.com/live/IRl5jmq-dIA" target="_blank">
+        <CenteredHeader> Plan wydarzenia pojawi się już wkrótce! </CenteredHeader>
+        <!-- <a href="https://www.youtube.com/live/IRl5jmq-dIA" target="_blank">
           <FilledButton :additional-class="buttonClass">Nagranie konferencji</FilledButton>
-         </a>
+        </a> -->
       </template>
       <template #secondElem>
         <router-link :to="{ name: 'schedule' }">

@@ -9,9 +9,9 @@ import PartnersPanel from '@/components/PartnersPanel.vue'
   <main class="min-h-[50vh] w-2/3 mx-auto pb-32">
     <router-view />
   </main>
-  <section id="sponsors" class="bg-marshland-100 text-marshland-950">
+  <!-- <section id="sponsors" class="bg-marshland-100 text-marshland-950">
     <PartnersPanel />
-  </section>
+  </section> -->
   <footer class="bg-marshland-800">
     <FooterPanel />
   </footer>
