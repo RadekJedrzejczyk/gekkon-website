@@ -6,7 +6,6 @@ import BarsIcon from '@/components/icons/BarsIcon.vue'
 import LogoComponent from '@/components/LogoComponent.vue'
 
 import banerUrl from "@/assets/baner.svg"
-import eBanerUrl from "@/assets/baner_egekon.svg"
 
 const isOpened = ref(false)
 const navItemClass = "hover:bg-marshland-200 p-2 rounded-lg"
