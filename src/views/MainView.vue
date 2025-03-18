@@ -29,7 +29,7 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
         </StyledText>
       </template>
     </SpacedPair>
-    <SpacedPair reversed>
+    <!-- <SpacedPair reversed>
       <template #firstElem>
         <CenteredHeader> Konferencja odbywa się na Discordzie! </CenteredHeader>
       </template>
@@ -38,7 +38,7 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
           <FilledButton :additional-class="buttonClass">Zapisy</FilledButton></router-link
         >
       </template>
-    </SpacedPair>
+    </SpacedPair> -->
     <!-- <SpacedPair reversed>
       <template #firstElem>
         <CenteredHeader> Oto postery zaprezentowane w czasie wydarzenia </CenteredHeader>
@@ -49,7 +49,7 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
         >
       </template>
     </SpacedPair> -->
-    <SpacedPair>
+    <!-- <SpacedPair>
       <template #firstElem>
         <CenteredHeader> Gdzie i kiedy? </CenteredHeader>
       </template>
@@ -65,21 +65,21 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
           >.
         </StyledText>
       </template>
-    </SpacedPair>
-    <SpacedPair reversed>
+    </SpacedPair> -->
+    <!-- <SpacedPair reversed>
       <template #firstElem>
         <CenteredHeader> Plan wydarzenia pojawi się już wkrótce! </CenteredHeader>
-        <!-- <a href="https://www.youtube.com/live/IRl5jmq-dIA" target="_blank">
+        <a href="https://www.youtube.com/live/IRl5jmq-dIA" target="_blank">
           <FilledButton :additional-class="buttonClass">Nagranie konferencji</FilledButton>
-        </a> -->
+        </a>
       </template>
       <template #secondElem>
         <router-link :to="{ name: 'schedule' }">
           <FilledButton :additional-class="buttonClass">Harmonogram</FilledButton></router-link
         >
       </template>
-    </SpacedPair>
-    <SpacedPair>
+    </SpacedPair> -->
+    <!-- <SpacedPair>
       <template #firstElem>
         <CenteredHeader> Zapoznaj się z regulaminem </CenteredHeader>
       </template>
@@ -90,7 +90,7 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
           ></router-link
         >
       </template>
-    </SpacedPair>
+    </SpacedPair> -->
     <SpacedPair reversed>
       <template #firstElem>
         <CenteredHeader> Masz pytania? </CenteredHeader>

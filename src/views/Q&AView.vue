@@ -73,14 +73,16 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
       </li>
     </ul>
   </StyledText> -->
-  <StyledHeader>Jak zorganizowana zostanie konferencja?</StyledHeader>
-  <StyledText>Konferencja zostanie przeprowadzona za pośrednictwem platformy Discord.</StyledText>
-  <StyledText
+  <!-- <StyledHeader>Jak zorganizowana zostanie konferencja?</StyledHeader> -->
+  <!-- <StyledText>Konferencja zostanie przeprowadzona za pośrednictwem platformy Discord.</StyledText> -->
+  <!-- <StyledText
     >Adres serwera Discord konferencji:
     <AccentedText
       ><LinkText
         ><a :href="discordServerAddress">{{ discordServerAddress }}</a></LinkText
       ></AccentedText
     ></StyledText
-  >
+  > -->
+  <StyledHeader>Organizujemy kolejne wydarzenie już w listopadzie</StyledHeader>
+  <StyledText>Dodatkowe informacje zostaną opublikowane w późniejszym terminie.</StyledText>
 </template>
