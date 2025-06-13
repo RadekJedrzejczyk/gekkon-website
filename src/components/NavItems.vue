@@ -7,6 +7,7 @@ const navItems: Array<LinkItem> = [
   // { name: 'posters', title: 'Postery', accent: true },
   // { name: 'schedule', title: 'Harmonogram', accent: false },
   // { name: 'regulations', title: 'Regulamin', accent: false },
+  { name: 'prior-editions', title: 'Poprzednie edycje', accent: false },
   { name: 'q&a', title: 'Q&A', accent: false },
   { name: 'contact', title: 'Kontakt', accent: false }
 ]
