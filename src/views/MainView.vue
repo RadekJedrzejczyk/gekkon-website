@@ -17,7 +17,7 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
       <template #firstElem>
         <CenteredHeader>
           Zapraszamy na <br />
-          e-GeKKoN!
+          GeKKoN!
         </CenteredHeader>
       </template>
       <template #secondElem>
@@ -97,14 +97,17 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
       </template>
       <template #secondElem>
         <div class="flex flex-col gap-y-4">
+          <router-link :to="{ name: 'prior-editions' }">
+            <FilledButton :additional-class="buttonClass">
+              Poprzednie edycje
+            </FilledButton>
+          </router-link>
           <router-link :to="{ name: 'q&a' }">
-            <FilledButton :additional-class="buttonClass">Q&A</FilledButton></router-link
-          >
+            <FilledButton :additional-class="buttonClass">Q&A</FilledButton>
+          </router-link>
           <router-link :to="{ name: 'contact' }">
-            <FilledButton :additional-class="buttonClass"
-              >Skontaktuj się z nami!</FilledButton
-            ></router-link
-          >
+            <FilledButton :additional-class="buttonClass">Skontaktuj się z nami!</FilledButton>
+          </router-link>
         </div>
       </template>
     </SpacedPair>

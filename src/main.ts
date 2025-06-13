@@ -41,6 +41,11 @@ const router = createRouter({
       component: () => import('@/views/PosterView.vue')
     },
     {
+      path: '/poprzednie-edycje',
+      name: 'prior-editions',
+      component: () => import('@/views/PriorEditionsView.vue')
+    },
+    {
       path: '/pytania',
       name: 'q&a',
       component: () => import('@/views/Q&AView.vue')
