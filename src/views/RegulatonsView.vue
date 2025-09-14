@@ -2,11 +2,11 @@
 import FilledButton from '@/components/styled/FilledButton.vue'
 import CenteredHeader from '@/components/styled/CenteredHeader.vue'
 
-const regulationsPDFLink = '/docs/konferencja-gekkon-regulamin.pdf'
+const regulationsPDFLink = '/docs/GeKKoN_Mowi_Regulamin.pdf'
 </script>
 
 <template>
-  <CenteredHeader class="pb-8">Zapoznaj się z regulaminem konferencji</CenteredHeader>
+  <CenteredHeader class="pb-8">Zapoznaj się z regulaminem wydarzenia</CenteredHeader>
   <div class="flex justify-center w-full">
     <a :href="regulationsPDFLink" target="_blank">
       <FilledButton
