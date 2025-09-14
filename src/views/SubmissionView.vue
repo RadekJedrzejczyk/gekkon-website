@@ -5,7 +5,7 @@ import FilledButton from '@/components/styled/FilledButton.vue'
 import AccentedText from '@/components/styled/AccentedText.vue'
 import LinkText from '@/components/styled/LinkText.vue'
 
-const posterSubmissionAdress = 'https://forms.gle/3hVpej4pwbuHj3wQ9'
+const posterSubmissionAdress = 'https://docs.google.com/forms/d/e/1FAIpQLSfgESGc8B6FYzjkEAvCxFnDUvpwUzlC5_f5CAsWWCFFIERXvA/viewform?usp=dialog'
 const conferenceSubmissionAddress = 'https://forms.gle/4qvyzPfrkasWDWHL9'
 const abstractTemplateAddress =
   'https://docs.google.com/document/d/1cfRBO8wYR4Whmd6ByNdwgnwk6u36hLSs'
@@ -14,8 +14,8 @@ const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
 </script>
 
 <template>
-  <section class="py-4">
-    <StyledHeader>Złoszenia prelegentów</StyledHeader>
+   <!-- <section class="py-4">
+   <StyledHeader>Złoszenia prelegentów</StyledHeader>
     <StyledText class="pb-4">
       <ul class="list-disc">
         <li>Prezentacja referatu może trwać maksymalnie <AccentedText>20 minut</AccentedText>.</li>
@@ -54,7 +54,7 @@ const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
         </FilledButton>
       </a>
     </div>
-  </section>
+  </section>-->
   <section class="py-4">
     <StyledHeader>Zapisy na sesję posterową</StyledHeader>
     <StyledText class="pb-4">

@@ -1,28 +1,28 @@
 <script setup lang="ts">
 const sponsors: { path: string; alt: string; src: string; bg?: string }[] = [
-  { path: '/partners/POLSAlogotypBLACK.png', alt: 'Logotyp POLSA', src: 'https://polsa.gov.pl/' },
-  { path: '/partners/KP_LABS_LOGO.png', alt: 'Logo KP LABS', src: 'https://kplabs.space/' },
-  {
-    path: '/partners/Nauka_z_Kulturą_LOGO.jpg',
-    alt: 'Logo Nauka z Kulturą',
-    src: 'https://mrowisko.polsl.pl/blok-kulturalny/nauka-z-kultura/'
-  },
+
   {
     path: '/partners/SKN_Silesian_Aerospace_Technologies_LOGO.png',
-    alt: 'Logo SKN SAT',
+    alt: 'SKN SAT',
     src: 'https://www.facebook.com/silesianaerospacetechnologiespolsl/'
   },
   {
-    path: '/partners/LogoIFn_v2.png',
-    alt: 'Logo Instytutu Fizyki',
-    src: 'https://www.polsl.pl/rif/'
+      path: '/partners/iceye_logo.png',
+    alt: 'ICEYE',
+    src: 'https://www.iceye.com'
   },
   {
-    path: '/partners/Logo_astrohunters.png',
-    alt: 'Logo Astrohunters',
-    src: 'https://www.astrohunters.pl/',
-    bg: 'bg-marshland-950'
+      path: '/partners/WNMS_logo.png',
+    alt: 'We Need More Space',
+    src: 'https://weneedmore.space/'
+  },
+  {
+    path: '/partners/POLSL_logo.png',
+    alt: 'Politechnika Śląska',
+    src: 'https://www.polsl.pl/'
   }
+  
+  
 ]
 </script>
 

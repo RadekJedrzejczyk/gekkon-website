@@ -9,7 +9,11 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
 </script>
 
 <template>
-  <!-- <StyledHeader>Jak dotrzeć na konferencję?</StyledHeader>
+ <StyledHeader>Nie mogę być na wydarzeniu, czy będzie jakieś nagranie?</StyledHeader> 
+ <StyledText>Tak! Wydarzenie będzie transmitowane na żywo, a nagranie pozostanie publiczne po jego zakończeniu.</StyledText>
+
+
+   <StyledHeader>Jak dotrzeć na konferencję?</StyledHeader>
   <StyledText class="pb-4"
     >Konferencja odbędzie się w budynku Centrum Kultury Studenckiej "Mrowisko":</StyledText
   >
@@ -72,9 +76,8 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
         <AccentedText>pod budynkiem Centrum Nowych Technologii (ul. Konarskiego 22b)</AccentedText>.
       </li>
     </ul>
-  </StyledText> -->
-  <!-- <StyledHeader>Jak zorganizowana zostanie konferencja?</StyledHeader> -->
-  <!-- <StyledText>Konferencja zostanie przeprowadzona za pośrednictwem platformy Discord.</StyledText> -->
+  </StyledText> 
+
   <!-- <StyledText
     >Adres serwera Discord konferencji:
     <AccentedText
@@ -83,6 +86,5 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
       ></AccentedText
     ></StyledText
   > -->
-  <StyledHeader>Organizujemy kolejne wydarzenie już w listopadzie</StyledHeader>
-  <StyledText>Dodatkowe informacje zostaną opublikowane w późniejszym terminie.</StyledText>
+
 </template>

@@ -17,15 +17,16 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
       <template #firstElem>
         <CenteredHeader>
           Zapraszamy na <br />
-          GeKKoN!
+          GeKKoN Mówi!
         </CenteredHeader>
       </template>
       <template #secondElem>
         <StyledText>
           <AccentedText>Górnośląska Kosmiczna Konferencja Naukowa GeKKoN</AccentedText>
-          to wydarzenie organizowane przez studentów
+          to wydarzenie organizowane przez studentów.
           <AccentedText>Politechniki Śląskiej</AccentedText>. W tym roku już po raz trzeci spotkamy
-          się, aby podzielić się odkryciami i badaniami związanymi z przestrzenia kosmiczną!
+          się, aby podzielić się odkryciami i badaniami związanymi z przestrzenia kosmiczną! 
+          Tym razem w wydaniu panelu dyskusyjnego, wraz z firmą <AccentedText>ICEYE</AccentedText> oraz <AccentedText>We Need More Space</AccentedText>. 
         </StyledText>
       </template>
     </SpacedPair>
@@ -49,28 +50,22 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
         >
       </template>
     </SpacedPair> -->
-    <!-- <SpacedPair>
+     <SpacedPair>
       <template #firstElem>
         <CenteredHeader> Gdzie i kiedy? </CenteredHeader>
       </template>
       <template #secondElem>
         <StyledText>
           Widzimy się już
-          <AccentedText>25 marca 2025 roku</AccentedText>
-          na
-          <AccentedText
-            ><LinkText
-              ><a :href="discordServerAddress">serwerze Discord konferencji</a></LinkText
-            ></AccentedText
-          >.
+          <AccentedText>17 listopada 2025 roku</AccentedText> o 14:00,
+          w Centrum Kultury Studenckiej "Mrowisko" w Gliwicach.
         </StyledText>
       </template>
-    </SpacedPair> -->
-    <!-- <SpacedPair reversed>
-      <template #firstElem>
-        <CenteredHeader> Plan wydarzenia pojawi się już wkrótce! </CenteredHeader>
-        <a href="https://www.youtube.com/live/IRl5jmq-dIA" target="_blank">
-          <FilledButton :additional-class="buttonClass">Nagranie konferencji</FilledButton>
+    </SpacedPair>
+   <SpacedPair reversed>
+       <template #firstElem>
+           <a href="https://www.youtube.com/live/IRl5jmq-dIA" target="_blank">
+          <FilledButton :additional-class="buttonClass">Nagranie konferencji 2024</FilledButton>
         </a>
       </template>
       <template #secondElem>
@@ -78,8 +73,8 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
           <FilledButton :additional-class="buttonClass">Harmonogram</FilledButton></router-link
         >
       </template>
-    </SpacedPair> -->
-    <!-- <SpacedPair>
+    </SpacedPair> 
+     <SpacedPair>
       <template #firstElem>
         <CenteredHeader> Zapoznaj się z regulaminem </CenteredHeader>
       </template>
@@ -90,7 +85,7 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
           ></router-link
         >
       </template>
-    </SpacedPair> -->
+    </SpacedPair> 
     <SpacedPair reversed>
       <template #firstElem>
         <CenteredHeader> Masz pytania? </CenteredHeader>
