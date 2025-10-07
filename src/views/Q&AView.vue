@@ -52,7 +52,8 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
     </StyledText>
     <StyledText class="pb-2">
       <StyledHeader size="xl">Autobusami linii</StyledHeader>
-      <AccentedText>32</AccentedText>, <AccentedText>232</AccentedText>,
+      <AccentedText>32</AccentedText>, <AccentedText>232</AccentedText>,http://localhost:5173/
+
       <AccentedText>932</AccentedText> z przystanku Gliwice Plac Piastów do przystaku Gliwice
       Komag.</StyledText
     >

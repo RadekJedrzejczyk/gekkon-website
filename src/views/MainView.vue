@@ -26,7 +26,7 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
           to wydarzenie organizowane przez studentów.
           <AccentedText>Politechniki Śląskiej</AccentedText>. W tym roku już po raz trzeci spotkamy
           się, aby podzielić się odkryciami i badaniami związanymi z przestrzenia kosmiczną! 
-          Tym razem w wydaniu panelu dyskusyjnego, wraz z firmą <AccentedText>ICEYE</AccentedText> oraz <AccentedText>We Need More Space</AccentedText>. 
+          Tym razem w wydaniu panelu dyskusyjnego, wraz z firmą <AccentedText>ICEYE</AccentedText>, <AccentedText>We Need More Space</AccentedText> oraz <AccentedText>Wydziałem Technologii Kosmicznych AGH</AccentedText>! 
         </StyledText>
       </template>
     </SpacedPair>
