@@ -12,7 +12,7 @@ const sponsors: { path: string; alt: string; src: string; bg?: string }[] = [
     src: 'https://www.iceye.com'
   },
   {
-      path: '/partners/WNMS_logo.png',
+    path: '/partners/WNMS_logo.png',
     alt: 'We Need More Space',
     src: 'https://weneedmore.space/'
   },
@@ -20,6 +20,11 @@ const sponsors: { path: string; alt: string; src: string; bg?: string }[] = [
     path: '/partners/POLSL_logo.png',
     alt: 'Politechnika Śląska',
     src: 'https://www.polsl.pl/'
+  },
+  {
+    path: '/partners/Nauka_z_Kulturą_LOGO.jpg',
+    alt: 'Nauka z Kulturą',
+    src: 'https://www.facebook.com/Naukazkultura/'
   }
   
   
