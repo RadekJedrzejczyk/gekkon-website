@@ -25,7 +25,13 @@ const sponsors: { path: string; alt: string; src: string; bg?: string }[] = [
     path: '/partners/Nauka_z_Kulturą_LOGO.jpg',
     alt: 'Nauka z Kulturą',
     src: 'https://www.facebook.com/Naukazkultura/'
+  },
+    {
+    path: '/partners/POLSAlogotypBLACK.png',
+    alt: 'Polska Agencja Kosmiczna POLSA',
+    src: 'https://polsa.gov.pl/'
   }
+  
   
   
 ]

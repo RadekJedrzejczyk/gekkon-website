@@ -9,6 +9,7 @@ const posterSubmissionAdress = 'https://docs.google.com/forms/d/e/1FAIpQLSfgESGc
 const conferenceSubmissionAddress = 'https://forms.gle/4qvyzPfrkasWDWHL9'
 const abstractTemplateAddress =
   'https://docs.google.com/document/d/1cfRBO8wYR4Whmd6ByNdwgnwk6u36hLSs'
+ const  conferenceParticipationAddress = 'https://docs.google.com/forms/d/e/1FAIpQLSffelVYGfn6nV6_lTcIQGt-LLHiOUPuuz2vTqnBurSAggIe4Q/viewform'
 
 const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
 </script>
@@ -83,6 +84,33 @@ const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
           Zapisz się na sesję posterową
         </FilledButton></a
       >
+    </div>
+  </section>
+<section class="py-4">
+   <StyledHeader>Złoszenia uczestników biernych</StyledHeader>
+    <StyledText class="pb-4">
+      <ul class="list-disc">
+        <li>Z przyczyn organizacyjnych prosimy o zgłaszanie uczestnictwa biernego. Możliwe jest również zgłoszenie stacjonarnie w dniu wydarzenia.</li>
+        <li> Państwa dane zostaną wykorzystane kontroli liczby gości oraz usunięte do miesiąca po wydarzeniu.</li>
+        <li>
+          Szczegóły uczestnictwa w konferencji można znaleźć w           <AccentedText
+            ><LinkText
+              ><router-link :to="{ name: 'regulations' }">regulaminie</router-link></LinkText
+            ></AccentedText
+          >.
+        </li>
+      </ul>
+    </StyledText>
+    <div class="flex justify-center">
+      <a :href="conferenceParticipationAddress" target="_blank">
+        <FilledButton
+          bg-color="bg-accent-600"
+          text-color="text-marshland-100"
+          :additional-class="buttonClass"
+        >
+          Zapisz się na konferencję!
+        </FilledButton>
+      </a>
     </div>
   </section>
 </template>
