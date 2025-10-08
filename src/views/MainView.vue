@@ -23,10 +23,13 @@ const discordServerAddress = 'https://discord.gg/xXTejbunjC'
       <template #secondElem>
         <StyledText>
           <AccentedText>Górnośląska Kosmiczna Konferencja Naukowa GeKKoN</AccentedText>
-          to wydarzenie organizowane przez studentów.
-          <AccentedText>Politechniki Śląskiej</AccentedText>. W tym roku już po raz trzeci spotkamy
+          to wydarzenie organizowane przez studentów <AccentedText>Politechniki Śląskiej</AccentedText>. W tym roku już po raz trzeci spotkamy
           się, aby podzielić się odkryciami i badaniami związanymi z przestrzenia kosmiczną! 
-          Tym razem w wydaniu panelu dyskusyjnego, wraz z firmą <AccentedText>ICEYE</AccentedText>, <AccentedText>We Need More Space</AccentedText> oraz <AccentedText>Wydziałem Technologii Kosmicznych AGH</AccentedText>! 
+          Tym razem wraz z firmą <AccentedText>ICEYE</AccentedText>, <AccentedText>We Need More Space</AccentedText> oraz <AccentedText>Wydziałem Technologii Kosmicznych AGH</AccentedText> będziemy rozmawiać o tym jaka jest przyszłość i realia przemysłu kosmicznego w Polsce, a także przyjrzymy się pracy młodych naukowców podczas   <AccentedText
+            ><LinkText
+              ><router-link :to="{ name: 'submissions' }">sesji posterowej</router-link></LinkText
+            ></AccentedText
+          >.
         </StyledText>
       </template>
     </SpacedPair>
