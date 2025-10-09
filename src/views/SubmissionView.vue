@@ -72,6 +72,7 @@ const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
             ></AccentedText
           >.
         </li>
+      <li> Ostateczny termin zgłoszeń to  <AccentedText>11.11.2025 r.</AccentedText></li>
       </ul>
     </StyledText>
     <div class="flex justify-center">
@@ -91,7 +92,6 @@ const buttonClass = 'w-64 md:w-96 hover:bg-accent-700'
     <StyledText class="pb-4">
       <ul class="list-disc">
         <li>Z przyczyn organizacyjnych prosimy o zgłaszanie uczestnictwa biernego. Możliwe jest również zgłoszenie stacjonarnie w dniu wydarzenia.</li>
-        <li> Państwa dane zostaną wykorzystane kontroli liczby gości oraz usunięte do miesiąca po wydarzeniu.</li>
         <li>
           Szczegóły uczestnictwa w konferencji można znaleźć w           <AccentedText
             ><LinkText
