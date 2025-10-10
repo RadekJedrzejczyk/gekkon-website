@@ -16,9 +16,9 @@ const items: { time: String; name: String; type: itemType }[] = [
    { time: '14:15', name: 'Prezentacje wprowadzające firmy ICEYE, We Need More Space oraz Wydziału Technologi Kosmicznych AGH.', type: itemType.lecture },
   { time: '15:00', name: 'Główna przerwa oraz sesja posterowa', type: itemType.lecture },
   { time: '15:45', name: 'Rozpoczęcie panelu dyskusyjnego. Paneliści: ', type: itemType.lecture },
-  {time: '', name: 'Kacper Grzesiak, Dyrektor ds. Handlowych firmy ICEYE', type: itemType.organizational},
-  {time: '', name: 'Radosław Grabarek, prowadzący kanału Youtube i wydarzeń popularnonaukowych We Need More Space', type: itemType.organizational},
-  {time: '', name: 'dr Marcin Zwierżdżyński, Wydział Technologi Kosmicznych Akademii Górniczo-Hutniczej w Krakowie', type: itemType.organizational},
+  {time: '', name: 'Kacper Grzesiak, Dyrektor ds. Handlowych firmy ICEYE', type: itemType.lecture},
+  {time: '', name: 'Radosław Grabarek, prowadzący kanału Youtube i wydarzeń popularnonaukowych We Need More Space', type: itemType.lecture},
+  {time: '', name: 'dr Marcin Zwierżdżyński, Wydział Technologi Kosmicznych Akademii Górniczo-Hutniczej w Krakowie', type: itemType.lecture},
 
   { time: '17:00', name: 'Zakończenie wydarzenia', type: itemType.lecture }
 ]
