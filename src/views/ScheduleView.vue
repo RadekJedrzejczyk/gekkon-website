@@ -12,20 +12,24 @@ enum itemType {
 }
 
 const items: { time: String; name: String; type: itemType }[] = [
- { time: '14:00', name: 'Rozpoczęcie', type: itemType.organizational },
-   { time: '14:15', name: 'Prezentacje wprowadzające', type: itemType.lecture },
-  { time: '15:00', name: 'Przerwa i sesja posterowa', type: itemType.lecture },
- { time: '15:45', name: 'Panel dyskusyjny', type: itemType.lecture },
-  { time: '17:00', name: 'Zakończenie', type: itemType.organizational }
+ { time: '14:00', name: 'Oficjalne rozpoczęcie', type: itemType.lecture },
+   { time: '14:15', name: 'Prezentacje wprowadzające firmy ICEYE, We Need More Space oraz Wydziału Technologi Kosmicznych AGH.', type: itemType.lecture },
+  { time: '15:00', name: 'Główna przerwa oraz sesja posterowa', type: itemType.lecture },
+  { time: '15:45', name: 'Rozpoczęcie panelu dyskusyjnego. Paneliści: ', type: itemType.lecture },
+  {time: '', name: 'Kacper Grzesiak, Dyrektor ds. Handlowych firmy ICEYE', type: itemType.lecture},
+  {time: '', name: 'Radosław Grabarek, prowadzący kanału Youtube i wydarzeń popularnonaukowych We Need More Space', type: itemType.lecture},
+  {time: '', name: 'dr Marcin Zwierżdżyński, Wydział Technologi Kosmicznych Akademii Górniczo-Hutniczej w Krakowie', type: itemType.lecture},
+
+  { time: '17:00', name: 'Zakończenie wydarzenia', type: itemType.lecture }
 ]
 
 </script>
 
 <template>
-  <StyledHeader class="pb-8">17 listopada 2025</StyledHeader>
+  <StyledHeader class="pb-8">17 listopada 2025, 14:00-17:00</StyledHeader>
 
   <StyledText class="pb-4">
-   Całość wydarzenia odbywa się w Centrum Kultury Studenckiej "Mrowisko" w Gliwicach.
+   Całość wydarzenia odbywa się w Centrum Kultury Studenckiej "Mrowisko", ul. Pszczyńska 85, 44-100 Gliwice.
   </StyledText>
 
   <div class="py-8">
